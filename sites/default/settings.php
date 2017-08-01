@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+// $databases['default']['default'] = array (
+//   'database' => 'pablosity',
+//   'username' => 'phpmyadmin',
+//   'password' => 'root',
+//   'prefix' => '',
+//   'host' => 'localhost',
+//   'port' => '3306',
+//   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+//   'driver' => 'mysql',
+// );
+// $settings['hash_salt'] = 'kP-ayCYRakW76cE8YEU2DSD8kI6NlORpVy7BaYfYuS3D_bmd06-WNAGBCF1oj7Y6AYXv7EOweA';
+// $settings['install_profile'] = 'standard';
