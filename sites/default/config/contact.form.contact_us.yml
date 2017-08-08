@@ -1,0 +1,12 @@
+uuid: 1670b73d-eb58-44d4-ac38-f0dfd31ea306
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - pablomoto1000@gmail.com
+reply: 'Thanks for contacting us, we''ll answer your questions as soon as possible!'
+weight: 0
+message: Thanks!
+redirect: /About

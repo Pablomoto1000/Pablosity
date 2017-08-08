@@ -1,0 +1,14 @@
+uuid: 726b655c-85cf-46c2-95a2-9ded10a170dc
+langcode: en
+status: true
+dependencies: {  }
+name: bannerracc
+label: BannerRacc
+effects:
+  b16f96cf-915d-4c6c-95cd-d29e9ea2299f:
+    uuid: b16f96cf-915d-4c6c-95cd-d29e9ea2299f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 550

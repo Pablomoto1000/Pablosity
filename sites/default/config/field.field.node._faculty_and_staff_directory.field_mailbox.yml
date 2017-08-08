@@ -1,0 +1,23 @@
+uuid: ba68721c-5a29-4130-b545-8189d722a6bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mailbox
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.field_mailbox
+field_name: field_mailbox
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: Mailbox
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: 562e74e7-d3b2-42cd-ba34-14ec57d6a4ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selective_programs
+    - node.type.admissions
+  module:
+    - text
+id: node.admissions.field_selective_programs
+field_name: field_selective_programs
+entity_type: node
+bundle: admissions
+label: 'Selective Programs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

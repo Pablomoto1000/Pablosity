@@ -1,0 +1,28 @@
+uuid: ba670138-678c-4ba7-a8fd-818beb2390a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.admissions.body
+    - node.type.admissions
+  module:
+    - text
+    - user
+id: node.admissions.teaser
+targetEntityType: node
+bundle: admissions
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

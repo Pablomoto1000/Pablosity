@@ -1,0 +1,22 @@
+uuid: 20c57513-e07e-4e72-a94c-116717f71056
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: job_description
+label: 'Job Description'
+type: 'canonical_entities:node'
+pattern: '/about-racc/career-opportunities/[node:nid]'
+selection_criteria:
+  f31e405d-8867-4333-b5f6-a8c022ff19ab:
+    id: node_type
+    bundles:
+      jon_description: jon_description
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f31e405d-8867-4333-b5f6-a8c022ff19ab
+selection_logic: and
+weight: -5
+relationships: {  }

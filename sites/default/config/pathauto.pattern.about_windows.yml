@@ -1,0 +1,24 @@
+uuid: b66ebb0f-af6c-468a-b93a-9c56ec809101
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: about_windows
+label: 'About urls'
+type: 'canonical_entities:node'
+pattern: '/about-racc/[node:title]'
+selection_criteria:
+  d14da532-8bc3-44d4-9162-8a6a53e2f592:
+    id: node_type
+    bundles:
+      board_of_trustees: board_of_trustees
+      career_opportunities: career_opportunities
+      _annual_fund: _annual_fund
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d14da532-8bc3-44d4-9162-8a6a53e2f592
+selection_logic: and
+weight: -5
+relationships: {  }

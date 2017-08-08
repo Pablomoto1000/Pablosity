@@ -1,0 +1,28 @@
+uuid: 2ccdea8d-0c81-42bf-9cb3-412ec9b096ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_back_to_career_opportuniti
+    - node.type.jon_description
+  module:
+    - link
+id: node.jon_description.field_back_to_career_opportuniti
+field_name: field_back_to_career_opportuniti
+entity_type: node
+bundle: jon_description
+label: 'Back to Career Opportunities'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/node/32'
+    title: 'Back to Career Opportunities'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

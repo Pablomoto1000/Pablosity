@@ -1,0 +1,25 @@
+uuid: b46ce50c-12a1-4aa2-b55c-1a5ac8894cb0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:videoembedblock:e5c321b6-f077-4904-8062-aeb7a3d8d6a7'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: videoembed
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:e5c321b6-f077-4904-8062-aeb7a3d8d6a7'
+settings:
+  id: 'block_content:e5c321b6-f077-4904-8062-aeb7a3d8d6a7'
+  label: 'How We Do It'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

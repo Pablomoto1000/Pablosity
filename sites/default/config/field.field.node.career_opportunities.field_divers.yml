@@ -1,0 +1,19 @@
+uuid: 473badcd-ff45-4503-9ec9-d8ee2823096d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_divers
+    - node.type.career_opportunities
+id: node.career_opportunities.field_divers
+field_name: field_divers
+entity_type: node
+bundle: career_opportunities
+label: 'Diversity Statement'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

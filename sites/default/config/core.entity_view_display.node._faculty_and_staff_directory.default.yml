@@ -1,0 +1,74 @@
+uuid: eb71fd47-04d8-4bc0-be5b-4890600ec6e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node._faculty_and_staff_directory.field_departmenta
+    - field.field.node._faculty_and_staff_directory.field_e
+    - field.field.node._faculty_and_staff_directory.field_mailbox
+    - field.field.node._faculty_and_staff_directory.field_name
+    - field.field.node._faculty_and_staff_directory.field_phone_ext_
+    - field.field.node._faculty_and_staff_directory.field_room
+    - node.type._faculty_and_staff_directory
+  module:
+    - user
+id: node._faculty_and_staff_directory.default
+targetEntityType: node
+bundle: _faculty_and_staff_directory
+mode: default
+content:
+  field_departmenta:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_e:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_mailbox:
+    weight: 5
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_ext_:
+    weight: 4
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_room:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

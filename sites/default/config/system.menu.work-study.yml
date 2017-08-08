@@ -1,0 +1,8 @@
+uuid: 7a265f92-92e3-4585-8275-aad389621f8b
+langcode: en
+status: true
+dependencies: {  }
+id: work-study
+label: WORK-STUDY
+description: ''
+locked: false

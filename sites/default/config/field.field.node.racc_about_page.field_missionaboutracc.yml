@@ -1,0 +1,21 @@
+uuid: 33b9320b-59e5-4e5d-918d-2d807a4b5869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_missionaboutracc
+    - node.type.racc_about_page
+  module:
+    - text
+id: node.racc_about_page.field_missionaboutracc
+field_name: field_missionaboutracc
+entity_type: node
+bundle: racc_about_page
+label: missionaboutracc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

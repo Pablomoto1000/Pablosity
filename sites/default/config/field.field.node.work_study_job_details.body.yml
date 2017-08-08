@@ -1,0 +1,22 @@
+uuid: 5a9f2d55-f2b2-4b98-bd17-ffa30128e728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.work_study_job_details
+  module:
+    - text
+id: node.work_study_job_details.body
+field_name: body
+entity_type: node
+bundle: work_study_job_details
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

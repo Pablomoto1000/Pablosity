@@ -1,0 +1,19 @@
+uuid: f4146403-f62a-497e-bb2b-5ee0e39308fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_missionaboutracc
+field_name: field_missionaboutracc
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

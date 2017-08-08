@@ -1,0 +1,9 @@
+uuid: e055ae4b-4c96-4dc8-8aa2-922b9ce7df9f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Career Opportunities Position'
+vid: career_opportunities
+description: ''
+hierarchy: 0
+weight: 0

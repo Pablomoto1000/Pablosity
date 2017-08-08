@@ -1,0 +1,19 @@
+uuid: 703269c1-1d4f-49b4-a0b2-f9e10ae8ae93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_racc_board_of_trustees
+    - node.type.board_of_trustees
+id: node.board_of_trustees.field_racc_board_of_trustees
+field_name: field_racc_board_of_trustees
+entity_type: node
+bundle: board_of_trustees
+label: 'RACC Board of Trustees'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

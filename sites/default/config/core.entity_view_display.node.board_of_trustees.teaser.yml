@@ -1,0 +1,26 @@
+uuid: 51e5fe9e-2645-4475-8c7b-1516575975d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.board_of_trustees.field_berks_county_board_of_comm
+    - field.field.node.board_of_trustees.field_college_solicitor_kozloff_
+    - field.field.node.board_of_trustees.field_emeritustrustee
+    - field.field.node.board_of_trustees.field_racc_board_of_trustees
+    - node.type.board_of_trustees
+  module:
+    - user
+id: node.board_of_trustees.teaser
+targetEntityType: node
+bundle: board_of_trustees
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_berks_county_board_of_comm: true
+  field_college_solicitor_kozloff_: true
+  field_emeritustrustee: true
+  field_racc_board_of_trustees: true

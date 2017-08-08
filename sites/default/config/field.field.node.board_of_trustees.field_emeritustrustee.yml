@@ -1,0 +1,19 @@
+uuid: 4d0809f3-c4f6-4910-aba2-eb2361e1de66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emeritustrustee
+    - node.type.board_of_trustees
+id: node.board_of_trustees.field_emeritustrustee
+field_name: field_emeritustrustee
+entity_type: node
+bundle: board_of_trustees
+label: 'Trustee Emeritus/Emerita'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

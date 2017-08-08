@@ -1,0 +1,109 @@
+uuid: e3dcead8-9b15-461a-95e1-d06a5ec9a020
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.current_posting.field_additional_info
+    - field.field.node.current_posting.field_bid_bond
+    - field.field.node.current_posting.field_bid_fee
+    - field.field.node.current_posting.field_department
+    - field.field.node.current_posting.field_due_date
+    - field.field.node.current_posting.field_performance_bond
+    - field.field.node.current_posting.field_post_date
+    - field.field.node.current_posting.field_postingdescription
+    - field.field.node.current_posting.field_proposal_number
+    - field.field.node.current_posting.field_refund
+    - node.type.current_posting
+  module:
+    - user
+id: node.current_posting.default
+targetEntityType: node
+bundle: current_posting
+mode: default
+content:
+  field_additional_info:
+    weight: 9
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_bid_bond:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_bid_fee:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_department:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_due_date:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_performance_bond:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_post_date:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_postingdescription:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_proposal_number:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_refund:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

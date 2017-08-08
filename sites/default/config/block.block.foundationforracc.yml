@@ -1,0 +1,29 @@
+uuid: 2cddf9fd-24ab-4d2a-9e67-5b5520cda52c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.foundation-for-racc
+  module:
+    - system
+  theme:
+    - bartik
+id: foundationforracc
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:foundation-for-racc'
+settings:
+  id: 'system_menu_block:foundation-for-racc'
+  label: 'FOUNDATION FOR RACC'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-racc/annual-fund
+    negate: false
+    context_mapping: {  }

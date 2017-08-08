@@ -1,0 +1,19 @@
+uuid: 965b3b3d-5451-4a27-aa0a-e5da0d90f869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_phone
+    - node.type.work_study_job_details
+id: node.work_study_job_details.field_office_phone
+field_name: field_office_phone
+entity_type: node
+bundle: work_study_job_details
+label: 'Office phone'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

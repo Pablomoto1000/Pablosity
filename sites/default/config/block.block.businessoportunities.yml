@@ -1,0 +1,29 @@
+uuid: 089f13fd-dbf4-4d01-9976-b3bb667646d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.business-oportunities
+  module:
+    - system
+  theme:
+    - bartik
+id: businessoportunities
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:business-oportunities'
+settings:
+  id: 'system_menu_block:business-oportunities'
+  label: 'BUSINESS OPORTUNITIES'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-racc/current-postings
+    negate: false
+    context_mapping: {  }

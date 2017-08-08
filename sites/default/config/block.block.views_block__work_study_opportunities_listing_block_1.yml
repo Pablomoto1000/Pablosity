@@ -1,0 +1,30 @@
+uuid: f0da40a4-7767-4ba4-b4c7-175f098ba16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.work_study_opportunities_listing
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__work_study_opportunities_listing_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:work_study_opportunities_listing-block_1'
+settings:
+  id: 'views_block:work_study_opportunities_listing-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /admissions/work-study-job-opportunities
+    negate: false
+    context_mapping: {  }

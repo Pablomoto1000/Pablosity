@@ -1,0 +1,17 @@
+uuid: 7b9790a3-c8ce-4913-b8b8-4008eab057e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Board of Trustees'
+type: board_of_trustees
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

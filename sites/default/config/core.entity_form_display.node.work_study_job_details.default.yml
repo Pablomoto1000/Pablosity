@@ -1,0 +1,152 @@
+uuid: a1a83638-89ff-474d-887e-d1a7a61aa632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work_study_job_details.body
+    - field.field.node.work_study_job_details.field_contact
+    - field.field.node.work_study_job_details.field_department
+    - field.field.node.work_study_job_details.field_dept_location
+    - field.field.node.work_study_job_details.field_email
+    - field.field.node.work_study_job_details.field_hours
+    - field.field.node.work_study_job_details.field_job_detailsw
+    - field.field.node.work_study_job_details.field_job_title
+    - field.field.node.work_study_job_details.field_office_phone
+    - field.field.node.work_study_job_details.field_pay_rate
+    - field.field.node.work_study_job_details.field_posted_date
+    - field.field.node.work_study_job_details.field_term
+    - node.type.work_study_job_details
+  module:
+    - datetime
+    - path
+    - text
+id: node.work_study_job_details.default
+targetEntityType: node
+bundle: work_study_job_details
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_department:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dept_location:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_hours:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_job_detailsw:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_job_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_office_phone:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pay_rate:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_posted_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_term:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,17 @@
+uuid: ce9555ba-74d0-416a-a1ab-1aeab02ad7bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Career Opportunities'
+type: career_opportunities
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

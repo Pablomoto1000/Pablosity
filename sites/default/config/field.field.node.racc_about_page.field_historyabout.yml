@@ -1,0 +1,21 @@
+uuid: 93220d31-1046-4ccd-987f-962ef234508c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historyabout
+    - node.type.racc_about_page
+  module:
+    - text
+id: node.racc_about_page.field_historyabout
+field_name: field_historyabout
+entity_type: node
+bundle: racc_about_page
+label: HistoryAbout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

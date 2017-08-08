@@ -1,0 +1,19 @@
+uuid: 600c46a0-5be1-4adc-b27b-c35b7bac39af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_career_opportunities_listi
+    - node.type.career_opportunities
+id: node.career_opportunities.field_career_opportunities_listi
+field_name: field_career_opportunities_listi
+entity_type: node
+bundle: career_opportunities
+label: 'Career Opportunities Listing'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

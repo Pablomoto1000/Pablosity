@@ -1,0 +1,19 @@
+uuid: 8c70c782-e88e-4c7b-936e-898a3c25fc63
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_racc_board_of_trustees
+field_name: field_racc_board_of_trustees
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

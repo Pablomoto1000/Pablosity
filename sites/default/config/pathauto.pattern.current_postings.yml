@@ -1,0 +1,22 @@
+uuid: 979e36ce-2526-4a1e-91fe-f48d133b634b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: current_postings
+label: 'Current Postings'
+type: 'canonical_entities:node'
+pattern: '/about-racc/current-postings/[node:nid]'
+selection_criteria:
+  1d2058aa-6dbe-4787-8fb6-fece921096e9:
+    id: node_type
+    bundles:
+      current_posting: current_posting
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1d2058aa-6dbe-4787-8fb6-fece921096e9
+selection_logic: and
+weight: -5
+relationships: {  }

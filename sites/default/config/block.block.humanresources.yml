@@ -1,0 +1,29 @@
+uuid: df6385c1-5428-420a-8c04-f1192213e13f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.human
+  module:
+    - system
+  theme:
+    - bartik
+id: humanresources
+theme: bartik
+region: sidebar_first
+weight: -13
+provider: null
+plugin: 'system_menu_block:human'
+settings:
+  id: 'system_menu_block:human'
+  label: 'HUMAN RESOURCES'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-racc/career-opportunities
+    negate: false
+    context_mapping: {  }

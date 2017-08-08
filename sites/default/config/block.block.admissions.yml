@@ -1,0 +1,29 @@
+uuid: d89955c2-9ca5-451b-b518-3dd290600a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admissions
+  module:
+    - system
+  theme:
+    - bartik
+id: admissions
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:admissions'
+settings:
+  id: 'system_menu_block:admissions'
+  label: ADMISSIONS
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/admissions\r\n/admissions/*"
+    negate: false
+    context_mapping: {  }

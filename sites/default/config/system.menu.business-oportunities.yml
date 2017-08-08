@@ -1,0 +1,8 @@
+uuid: f67f6c1a-93a1-4a54-90ac-a0dd5a3c6da7
+langcode: en
+status: true
+dependencies: {  }
+id: business-oportunities
+label: 'BUSINESS OPORTUNITIES'
+description: ''
+locked: false

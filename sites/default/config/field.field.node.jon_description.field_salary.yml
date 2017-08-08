@@ -1,0 +1,23 @@
+uuid: 31450d49-5a16-4961-80f4-839e860fd58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary
+    - node.type.jon_description
+id: node.jon_description.field_salary
+field_name: field_salary
+entity_type: node
+bundle: jon_description
+label: Salary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

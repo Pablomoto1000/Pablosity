@@ -1,0 +1,24 @@
+uuid: 668639d7-4e56-4987-b0e1-890dac6ca55f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posted_date
+    - node.type.work_study_job_details
+  module:
+    - datetime
+id: node.work_study_job_details.field_posted_date
+field_name: field_posted_date
+entity_type: node
+bundle: work_study_job_details
+label: 'Posted date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: 64ab65a3-daa4-4cc8-880e-099e388e145c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dept_location
+    - node.type.work_study_job_details
+id: node.work_study_job_details.field_dept_location
+field_name: field_dept_location
+entity_type: node
+bundle: work_study_job_details
+label: 'Dept location'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

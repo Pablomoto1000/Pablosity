@@ -1,0 +1,19 @@
+uuid: 55679536-fa62-4b80-8669-4a6da40c9aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_departmenta
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.field_departmenta
+field_name: field_departmenta
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: Department
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,52 @@
+uuid: 4d3c4c23-5588-436f-bfff-0ed3edea7563
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.admissions.body
+    - field.field.node.admissions.field_open_admissions
+    - field.field.node.admissions.field_selective_programs
+    - field.field.node.admissions.field_student_data
+    - node.type.admissions
+  module:
+    - text
+    - user
+id: node.admissions.default
+targetEntityType: node
+bundle: admissions
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_open_admissions:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_selective_programs:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_student_data:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

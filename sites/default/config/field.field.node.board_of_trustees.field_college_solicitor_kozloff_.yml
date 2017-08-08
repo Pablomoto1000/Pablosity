@@ -1,0 +1,19 @@
+uuid: f0e22854-d36b-406d-8588-e55b76748d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_college_solicitor_kozloff_
+    - node.type.board_of_trustees
+id: node.board_of_trustees.field_college_solicitor_kozloff_
+field_name: field_college_solicitor_kozloff_
+entity_type: node
+bundle: board_of_trustees
+label: 'College Solicitor - Kozloff Stoudt'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

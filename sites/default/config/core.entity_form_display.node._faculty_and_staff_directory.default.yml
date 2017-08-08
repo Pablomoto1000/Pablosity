@@ -1,0 +1,97 @@
+uuid: a4117a9d-bd6e-47b2-b091-66488e309863
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node._faculty_and_staff_directory.field_departmenta
+    - field.field.node._faculty_and_staff_directory.field_e
+    - field.field.node._faculty_and_staff_directory.field_mailbox
+    - field.field.node._faculty_and_staff_directory.field_name
+    - field.field.node._faculty_and_staff_directory.field_phone_ext_
+    - field.field.node._faculty_and_staff_directory.field_room
+    - node.type._faculty_and_staff_directory
+  module:
+    - path
+id: node._faculty_and_staff_directory.default
+targetEntityType: node
+bundle: _faculty_and_staff_directory
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_departmenta:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_e:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mailbox:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_name:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone_ext_:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_room:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,8 @@
+uuid: 60e98f9d-5fc3-4255-a4ce-f4853f77be79
+langcode: en
+status: true
+dependencies: {  }
+id: featured
+label: Featured
+description: 'Menu for Featured Post'
+locked: false

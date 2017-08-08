@@ -1,0 +1,21 @@
+uuid: 1e8a3ddd-7c68-49b5-8fb4-82c829d72c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student
+    - node.type._annual_fund
+  module:
+    - text
+id: node._annual_fund.field_student
+field_name: field_student
+entity_type: node
+bundle: _annual_fund
+label: Student
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

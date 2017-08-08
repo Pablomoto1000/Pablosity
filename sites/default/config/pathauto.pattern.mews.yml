@@ -1,0 +1,22 @@
+uuid: ade657af-b3a3-4c9e-87f8-aea0a16fd8f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: mews
+label: News
+type: 'canonical_entities:node'
+pattern: '/news/[node:field_description]'
+selection_criteria:
+  012a75dc-6822-4e51-b790-884ee8cae815:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 012a75dc-6822-4e51-b790-884ee8cae815
+selection_logic: and
+weight: -5
+relationships: {  }

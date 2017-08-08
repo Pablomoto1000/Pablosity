@@ -1,0 +1,33 @@
+uuid: dd1c68a7-4de2-449d-a7a9-3e1ad790b99a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.videoembed.field_videoembed
+    - node.type.videoembed
+  module:
+    - user
+    - video_embed_field
+id: node.videoembed.teaser
+targetEntityType: node
+bundle: videoembed
+mode: teaser
+content:
+  field_videoembed:
+    type: video_embed_field_video
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

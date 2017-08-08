@@ -1,0 +1,28 @@
+uuid: af7c9002-74c9-47b2-8eed-4c8cbc961de8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jon_description.body
+    - node.type.jon_description
+  module:
+    - text
+    - user
+id: node.jon_description.teaser
+targetEntityType: node
+bundle: jon_description
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

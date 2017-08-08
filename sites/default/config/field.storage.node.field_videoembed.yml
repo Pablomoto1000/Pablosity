@@ -1,0 +1,19 @@
+uuid: cf691e37-70fd-46c6-bd39-c54304f4f6f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - video_embed_field
+id: node.field_videoembed
+field_name: field_videoembed
+entity_type: node
+type: video_embed_field
+settings: {  }
+module: video_embed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

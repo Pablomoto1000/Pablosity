@@ -1,0 +1,19 @@
+uuid: 315501ba-492c-40d8-a839-c13085f57875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.field_e
+field_name: field_e
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

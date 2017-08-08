@@ -1,0 +1,68 @@
+uuid: f7177ebd-996d-4761-ac4c-fa3c6deb84d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.board_of_trustees.field_berks_county_board_of_comm
+    - field.field.node.board_of_trustees.field_college_solicitor_kozloff_
+    - field.field.node.board_of_trustees.field_emeritustrustee
+    - field.field.node.board_of_trustees.field_racc_board_of_trustees
+    - node.type.board_of_trustees
+  module:
+    - path
+id: node.board_of_trustees.default
+targetEntityType: node
+bundle: board_of_trustees
+mode: default
+content:
+  field_berks_county_board_of_comm:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_college_solicitor_kozloff_:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_emeritustrustee:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_racc_board_of_trustees:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

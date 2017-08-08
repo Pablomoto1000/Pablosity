@@ -1,0 +1,44 @@
+uuid: 7836a768-4932-47e2-beb0-e38aa385cad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node._annual_fund.body
+    - field.field.node._annual_fund.field_foundationinfo
+    - field.field.node._annual_fund.field_student
+    - node.type._annual_fund
+  module:
+    - text
+    - user
+id: node._annual_fund.default
+targetEntityType: node
+bundle: _annual_fund
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_foundationinfo:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_student:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

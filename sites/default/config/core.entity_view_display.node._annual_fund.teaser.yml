@@ -1,0 +1,28 @@
+uuid: 2c93b134-326e-4ed3-89e6-12bb0002a388
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node._annual_fund.body
+    - node.type._annual_fund
+  module:
+    - text
+    - user
+id: node._annual_fund.teaser
+targetEntityType: node
+bundle: _annual_fund
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

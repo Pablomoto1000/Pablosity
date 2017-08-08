@@ -1,0 +1,14 @@
+uuid: d4890f54-6c16-4f46-bf6f-42029a16286c
+name: PabloSity
+mail: pablomoto1000@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

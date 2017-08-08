@@ -1,0 +1,23 @@
+uuid: 111beac8-f269-4209-9f38-95b0d579d7b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pay_rate
+    - node.type.work_study_job_details
+id: node.work_study_job_details.field_pay_rate
+field_name: field_pay_rate
+entity_type: node
+bundle: work_study_job_details
+label: 'Pay rate'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: $
+  suffix: ' per hour'
+field_type: float

@@ -1,0 +1,19 @@
+uuid: 1a2cff90-f22a-4a13-a20c-65629baa8757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_data
+    - node.type.admissions
+id: node.admissions.field_student_data
+field_name: field_student_data
+entity_type: node
+bundle: admissions
+label: 'Student Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

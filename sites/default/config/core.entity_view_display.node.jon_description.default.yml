@@ -1,0 +1,122 @@
+uuid: 6ac43381-daa7-45f3-afc8-ee6b0832304c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jon_description.body
+    - field.field.node.jon_description.field_announce_date_
+    - field.field.node.jon_description.field_applydate
+    - field.field.node.jon_description.field_appstatus
+    - field.field.node.jon_description.field_back_to_career_opportuniti
+    - field.field.node.jon_description.field_describe
+    - field.field.node.jon_description.field_job_details
+    - field.field.node.jon_description.field_postype
+    - field.field.node.jon_description.field_salary
+    - field.field.node.jon_description.field_summary
+    - field.field.node.jon_description.field_title_
+    - node.type.jon_description
+  module:
+    - link
+    - text
+    - user
+id: node.jon_description.default
+targetEntityType: node
+bundle: jon_description
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_announce_date_:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_applydate:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_appstatus:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_back_to_career_opportuniti:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_describe:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_job_details:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_postype:
+    weight: 7
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_salary:
+    weight: 8
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_summary:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title_:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

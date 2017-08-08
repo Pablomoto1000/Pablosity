@@ -1,0 +1,24 @@
+uuid: 0a0ed116-2678-407a-89d5-b692938fb442
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.featured
+  module:
+    - system
+  theme:
+    - bartik
+id: featured
+theme: bartik
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'system_menu_block:featured'
+settings:
+  id: 'system_menu_block:featured'
+  label: Featured
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

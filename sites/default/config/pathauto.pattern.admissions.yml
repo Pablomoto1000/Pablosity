@@ -1,0 +1,24 @@
+uuid: 89299390-5e8b-48ab-b077-c0d77e6c2c17
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: admissions
+label: 'Basic page url'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  544cf058-e472-4b45-bcd8-8c2d0a28daaf:
+    id: node_type
+    bundles:
+      admissions: admissions
+      page: page
+      racc_about_page: racc_about_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 544cf058-e472-4b45-bcd8-8c2d0a28daaf
+selection_logic: and
+weight: -5
+relationships: {  }

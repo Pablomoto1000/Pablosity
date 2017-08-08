@@ -1,0 +1,21 @@
+uuid: 862329f8-d302-46c0-a2ad-9c2f98df281c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visionaboutracc
+    - node.type.racc_about_page
+  module:
+    - text
+id: node.racc_about_page.field_visionaboutracc
+field_name: field_visionaboutracc
+entity_type: node
+bundle: racc_about_page
+label: visionaboutracc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,17 @@
+uuid: a2ee6c32-08c2-4516-9f57-f7a5c1f1d0a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job Description'
+type: jon_description
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

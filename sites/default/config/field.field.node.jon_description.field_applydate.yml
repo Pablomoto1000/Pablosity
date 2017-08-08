@@ -1,0 +1,19 @@
+uuid: 2a5963c2-de0f-4b0d-a20b-70f42f626e3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_applydate
+    - node.type.jon_description
+id: node.jon_description.field_applydate
+field_name: field_applydate
+entity_type: node
+bundle: jon_description
+label: 'Apply by date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

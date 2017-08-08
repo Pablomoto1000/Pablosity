@@ -1,0 +1,19 @@
+uuid: 51211ecb-a13e-468e-8b3e-cf2fa87bc981
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appstatus
+    - node.type.jon_description
+id: node.jon_description.field_appstatus
+field_name: field_appstatus
+entity_type: node
+bundle: jon_description
+label: 'Application status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

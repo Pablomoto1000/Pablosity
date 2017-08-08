@@ -1,0 +1,27 @@
+uuid: 30e25b65-a9a7-47e6-b98f-4cc221a961b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_file
+    - node.type.events
+  module:
+    - file
+id: node.events.field_information_file
+field_name: field_information_file
+entity_type: node
+bundle: events
+label: 'Information File'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf docx ics'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

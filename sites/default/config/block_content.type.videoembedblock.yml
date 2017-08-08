@@ -1,0 +1,8 @@
+uuid: bb62fd94-40ea-414c-92b5-b1cd3a2725f3
+langcode: en
+status: true
+dependencies: {  }
+id: videoembedblock
+label: VideoEmbedBlock
+revision: 0
+description: ''

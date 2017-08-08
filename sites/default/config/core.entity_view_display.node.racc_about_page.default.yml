@@ -1,0 +1,64 @@
+uuid: dd2002e6-af6a-44ba-93e1-9f2964e6de90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.racc_about_page.body
+    - field.field.node.racc_about_page.field_historyabout
+    - field.field.node.racc_about_page.field_image
+    - field.field.node.racc_about_page.field_missionaboutracc
+    - field.field.node.racc_about_page.field_visionaboutracc
+    - image.style.bannerracc
+    - node.type.racc_about_page
+  module:
+    - image
+    - text
+    - user
+id: node.racc_about_page.default
+targetEntityType: node
+bundle: racc_about_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_historyabout:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: bannerracc
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_missionaboutracc:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_visionaboutracc:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: d8fa7da3-5806-4e62-9c3a-4c135bb9b046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.admissions
+  module:
+    - text
+id: node.admissions.body
+field_name: body
+entity_type: node
+bundle: admissions
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

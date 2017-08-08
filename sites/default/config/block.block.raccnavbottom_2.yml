@@ -1,0 +1,29 @@
+uuid: 6e4d5cb0-2545-4920-beb9-4b5f5a754770
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.racc-nav-bottom
+  module:
+    - system
+  theme:
+    - bartik
+id: raccnavbottom_2
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:racc-nav-bottom'
+settings:
+  id: 'system_menu_block:racc-nav-bottom'
+  label: 'MAIN MANU'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

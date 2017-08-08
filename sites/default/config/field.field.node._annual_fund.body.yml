@@ -1,0 +1,22 @@
+uuid: f875d042-6a19-4bfe-a55d-15da59883604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type._annual_fund
+  module:
+    - text
+id: node._annual_fund.body
+field_name: body
+entity_type: node
+bundle: _annual_fund
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

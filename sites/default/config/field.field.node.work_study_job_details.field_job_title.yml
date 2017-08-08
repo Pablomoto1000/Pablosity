@@ -1,0 +1,19 @@
+uuid: 925625fe-8b8f-4f8c-8758-777926566a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_title
+    - node.type.work_study_job_details
+id: node.work_study_job_details.field_job_title
+field_name: field_job_title
+entity_type: node
+bundle: work_study_job_details
+label: 'Job title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

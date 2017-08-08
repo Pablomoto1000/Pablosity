@@ -1,0 +1,24 @@
+uuid: 5b593b8a-787e-4a4d-87df-5945bb5940b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.racc-nav
+  module:
+    - system
+  theme:
+    - bartik
+id: raccnav
+theme: bartik
+region: secondary_menu
+weight: -10
+provider: null
+plugin: 'system_menu_block:racc-nav'
+settings:
+  id: 'system_menu_block:racc-nav'
+  label: 'Racc Nav'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

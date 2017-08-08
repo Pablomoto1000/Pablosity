@@ -1,0 +1,22 @@
+uuid: e1aac53f-027f-4f6b-ad96-a4252632561c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+id: node._annual_fund.promote
+field_name: promote
+entity_type: node
+bundle: _annual_fund
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

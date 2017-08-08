@@ -1,0 +1,19 @@
+uuid: db61bcc1-0a15-49ca-bed1-c268a7456d88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_info
+    - node.type.current_posting
+id: node.current_posting.field_additional_info
+field_name: field_additional_info
+entity_type: node
+bundle: current_posting
+label: 'Additional info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

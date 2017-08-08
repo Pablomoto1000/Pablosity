@@ -1,0 +1,21 @@
+uuid: 6799a1f8-432d-4a15-98bc-a1259e0a7ba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.jon_description
+  module:
+    - text
+id: node.jon_description.field_summary
+field_name: field_summary
+entity_type: node
+bundle: jon_description
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

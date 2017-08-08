@@ -1,0 +1,19 @@
+uuid: f5c61a29-34a1-4606-b882-6c1c2831bf75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.work_study_job_details
+id: node.work_study_job_details.field_contact
+field_name: field_contact
+entity_type: node
+bundle: work_study_job_details
+label: Contact
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

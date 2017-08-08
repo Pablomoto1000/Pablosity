@@ -1,0 +1,81 @@
+uuid: 3586a88a-1eed-4a64-90b8-0e7fde6cff9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.racc_about_page.body
+    - field.field.node.racc_about_page.field_historyabout
+    - field.field.node.racc_about_page.field_image
+    - field.field.node.racc_about_page.field_missionaboutracc
+    - field.field.node.racc_about_page.field_visionaboutracc
+    - image.style.medium
+    - node.type.racc_about_page
+  module:
+    - image
+    - path
+    - text
+id: node.racc_about_page.default
+targetEntityType: node
+bundle: racc_about_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_historyabout:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: medium
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_missionaboutracc:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_visionaboutracc:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

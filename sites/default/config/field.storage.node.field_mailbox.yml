@@ -1,0 +1,20 @@
+uuid: ff4f1a34-08e0-478e-8eac-094dfe47a4df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mailbox
+field_name: field_mailbox
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

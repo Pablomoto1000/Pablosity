@@ -1,0 +1,30 @@
+uuid: bd98d4d2-eea7-4f1a-b4e4-556fb3a0ed58
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node._faculty_and_staff_directory.field_departmenta
+    - field.field.node._faculty_and_staff_directory.field_e
+    - field.field.node._faculty_and_staff_directory.field_mailbox
+    - field.field.node._faculty_and_staff_directory.field_name
+    - field.field.node._faculty_and_staff_directory.field_phone_ext_
+    - field.field.node._faculty_and_staff_directory.field_room
+    - node.type._faculty_and_staff_directory
+  module:
+    - user
+id: node._faculty_and_staff_directory.teaser
+targetEntityType: node
+bundle: _faculty_and_staff_directory
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_departmenta: true
+  field_e: true
+  field_mailbox: true
+  field_name: true
+  field_phone_ext_: true
+  field_room: true

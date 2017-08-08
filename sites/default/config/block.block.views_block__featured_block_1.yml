@@ -1,0 +1,30 @@
+uuid: 608fbdc2-d89a-4e87-a03b-cbdd4a462b52
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__featured_block_1
+theme: bartik
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:featured-block_1'
+settings:
+  id: 'views_block:featured-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

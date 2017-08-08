@@ -1,0 +1,17 @@
+uuid: 28d64296-8452-46f4-90cc-35b8ee91a0c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Faculty and Staff Directory'
+type: _faculty_and_staff_directory
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: bc93749f-e989-4ce6-b63b-cae235957c18
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.racc-nav-bottom
+  module:
+    - system
+  theme:
+    - bartik
+id: raccnavbottom
+theme: bartik
+region: secondary_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:racc-nav-bottom'
+settings:
+  id: 'system_menu_block:racc-nav-bottom'
+  label: 'Racc Nav Bottom'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

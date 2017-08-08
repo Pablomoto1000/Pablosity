@@ -1,0 +1,17 @@
+uuid: 8746d9b3-9e5b-4215-bc9d-a06133c9139e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Work-Study Job Details'
+type: work_study_job_details
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
