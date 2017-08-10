@@ -11,7 +11,7 @@ dependencies:
 id: workstudy
 theme: bartik
 region: sidebar_first
-weight: -14
+weight: -13
 provider: null
 plugin: 'system_menu_block:work-study'
 settings:
