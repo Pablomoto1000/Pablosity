@@ -186,4 +186,8 @@ AddEncoding gzip svgz
   Header always set X-Content-Type-Options nosniff
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
-</IfModule>
+</IfModule>    
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+
+
