@@ -1,0 +1,21 @@
+uuid: f22ce35e-1889-4eb2-b528-2be527d9b8fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.or_call.field_or_call
+    - paragraphs.paragraphs_type.or_call
+id: paragraph.or_call.default
+targetEntityType: paragraph
+bundle: or_call
+mode: default
+content:
+  field_or_call:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

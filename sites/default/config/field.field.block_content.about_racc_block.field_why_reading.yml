@@ -1,0 +1,21 @@
+uuid: 2ee6e656-ea84-41de-acd3-722b682accf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+    - field.storage.block_content.field_why_reading
+  module:
+    - text
+id: block_content.about_racc_block.field_why_reading
+field_name: field_why_reading
+entity_type: block_content
+bundle: about_racc_block
+label: 'Why Reading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,28 @@
+uuid: ff3c8b39-7fc1-484e-bb1e-1aeca4d94702
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.get_connected.body
+    - node.type.get_connected
+  module:
+    - text
+    - user
+id: node.get_connected.teaser
+targetEntityType: node
+bundle: get_connected
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

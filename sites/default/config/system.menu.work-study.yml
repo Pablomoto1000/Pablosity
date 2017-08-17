@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: work-study
-label: WORK-STUDY
+label: Work-Study
 description: ''
 locked: false

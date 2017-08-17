@@ -1,0 +1,21 @@
+uuid: 309a4944-7f58-4fdf-b49b-0459ec169fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historyabout
+    - node.type.wantcontent
+  module:
+    - text
+id: node.wantcontent.field_historyabout
+field_name: field_historyabout
+entity_type: node
+bundle: wantcontent
+label: LeftList
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

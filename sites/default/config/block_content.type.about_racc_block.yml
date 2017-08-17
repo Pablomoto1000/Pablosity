@@ -1,0 +1,8 @@
+uuid: e2d14f78-32d7-4299-b94b-625c30fbe092
+langcode: en
+status: true
+dependencies: {  }
+id: about_racc_block
+label: 'About Racc Block'
+revision: 0
+description: ''

@@ -1,0 +1,16 @@
+uuid: ab0c5d24-b3a4-4eef-b4f1-ba5c6d7122e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: get_connected
+label: 'Get Connected'
+effects:
+  e175d0f4-75a9-4212-a9ca-0c1e8f709c95:
+    uuid: e175d0f4-75a9-4212-a9ca-0c1e8f709c95
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 337
+      height: 337

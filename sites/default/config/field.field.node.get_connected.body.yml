@@ -1,0 +1,22 @@
+uuid: 4f2c4316-d8e8-4a84-8824-9bb6ecd98f1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.get_connected
+  module:
+    - text
+id: node.get_connected.body
+field_name: body
+entity_type: node
+bundle: get_connected
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

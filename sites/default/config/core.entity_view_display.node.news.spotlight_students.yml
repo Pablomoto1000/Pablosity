@@ -1,0 +1,86 @@
+uuid: ffce412c-1d2b-47bf-a4b8-e72e9de6c13a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.spotlight_students
+    - field.field.node.news.body
+    - field.field.node.news.field_description
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_newsdate
+    - field.field.node.news.field_newstax
+    - image.style.large
+    - node.type.news
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_news_image
+        - links
+      right:
+        - node_title
+        - field_description
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+id: node.news.spotlight_students
+targetEntityType: node
+bundle: news
+mode: spotlight_students
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: right
+  field_description:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_news_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  links:
+    weight: 1
+    region: left
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_newsdate: true
+  field_newstax: true

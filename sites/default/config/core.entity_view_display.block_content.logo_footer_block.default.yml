@@ -1,0 +1,57 @@
+uuid: d497eabe-643a-4643-91db-d82308009e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_footer_block
+    - field.field.block_content.logo_footer_block.body
+    - field.field.block_content.logo_footer_block.field_bannerracc
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_bannerracc
+        - body
+id: block_content.logo_footer_block.default
+targetEntityType: block_content
+bundle: logo_footer_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: header
+  field_bannerracc:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: header
+hidden: {  }

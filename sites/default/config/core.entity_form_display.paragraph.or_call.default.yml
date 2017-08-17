@@ -1,0 +1,31 @@
+uuid: a757d31d-2cd4-4610-90ee-623ce5a25e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.or_call.field_or_call
+    - paragraphs.paragraphs_type.or_call
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.or_call.default
+targetEntityType: paragraph
+bundle: or_call
+mode: default
+content:
+  field_or_call:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

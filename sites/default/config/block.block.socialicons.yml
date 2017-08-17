@@ -1,0 +1,24 @@
+uuid: dc95b73a-e2f4-465b-abc4-8fe606219179
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-icons
+  module:
+    - system
+  theme:
+    - bartik
+id: socialicons
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-icons'
+settings:
+  id: 'system_menu_block:social-icons'
+  label: 'Social Icons'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

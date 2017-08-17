@@ -1,0 +1,39 @@
+uuid: 0a2659a4-5fbf-4808-9783-ebeac6a9bced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sponsors.field_sponsor
+    - image.style.sponsors
+    - node.type.sponsors
+  module:
+    - fences
+    - image
+    - user
+id: node.sponsors.default
+targetEntityType: node
+bundle: sponsors
+mode: default
+content:
+  field_sponsor:
+    weight: 101
+    label: hidden
+    settings:
+      image_style: sponsors
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

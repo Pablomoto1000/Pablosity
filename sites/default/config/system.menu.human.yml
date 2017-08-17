@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: human
-label: 'HUMAN RESOURCES'
+label: 'Human Resources'
 description: ''
 locked: false

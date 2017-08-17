@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: foundation-for-racc
-label: 'FOUNDATION FOR RACC'
+label: 'Foundation For Racc'
 description: ''
 locked: false

@@ -1,0 +1,8 @@
+uuid: e3ea61e8-b605-40e0-82c0-68fe48b87a56
+langcode: en
+status: true
+dependencies: {  }
+id: fourth-column-footer
+label: 'Login Center'
+description: ''
+locked: false

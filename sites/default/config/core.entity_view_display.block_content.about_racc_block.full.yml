@@ -1,0 +1,77 @@
+uuid: 08b7b14f-c9ca-49c2-8dfb-a080ca5b7f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.about_racc_block.body
+    - field.field.block_content.about_racc_block.field_videoembed
+    - field.field.block_content.about_racc_block.field_why_reading
+  module:
+    - ds
+    - fences
+    - text
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_equal_width
+      library: ds/ds_3col_equal_width
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          middle: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - body
+      middle:
+        - field_videoembed
+        - field_why_reading
+id: block_content.about_racc_block.full
+targetEntityType: block_content
+bundle: about_racc_block
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_videoembed:
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: video_embed_field_video
+    region: middle
+  field_why_reading:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: middle
+hidden: {  }

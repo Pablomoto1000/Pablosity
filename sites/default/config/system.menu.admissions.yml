@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: admissions
-label: ADMISSIONS
+label: Admissions
 description: ''
 locked: false

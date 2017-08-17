@@ -1,0 +1,12 @@
+uuid: 467b7d4c-b49a-4ad7-a92b-aa2b4a8f02ab
+langcode: en
+status: true
+dependencies: {  }
+id: need_more_info
+label: 'Need More Info'
+recipients:
+  - pablomoto1000@gmail.com
+reply: 'Thanks for contacting us'
+weight: 0
+message: 'Thanks for contacting us'
+redirect: /homepage

@@ -1,0 +1,22 @@
+uuid: fbe2c4d0-485a-48ac-bed4-cfff5a3bd703
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.about_racc_block.body
+field_name: body
+entity_type: block_content
+bundle: about_racc_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

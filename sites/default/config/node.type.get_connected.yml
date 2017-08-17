@@ -1,0 +1,17 @@
+uuid: 8465c747-1f94-4313-8051-bc5b42ffd0c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Get Connected'
+type: get_connected
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

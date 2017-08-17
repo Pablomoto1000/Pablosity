@@ -1,0 +1,8 @@
+uuid: 59f0261d-4b48-40b6-97aa-d2a9d0b840ff
+langcode: en
+status: true
+dependencies: {  }
+id: social-icons
+label: 'Social Icons'
+description: ''
+locked: false

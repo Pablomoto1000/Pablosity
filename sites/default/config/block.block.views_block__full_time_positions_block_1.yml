@@ -12,7 +12,7 @@ dependencies:
 id: views_block__full_time_positions_block_1
 theme: bartik
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'views_block:full_time_positions-block_1'
 settings:

@@ -1,0 +1,8 @@
+uuid: a0297e2e-d399-41aa-b0d5-32a6606ec908
+langcode: en
+status: true
+dependencies: {  }
+id: first-column-footer
+label: 'Popular Links'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 5704aacb-736c-43ea-bb03-b23965e7d73d
+langcode: en
+status: true
+dependencies: {  }
+id: third-column-footer
+label: Policies
+description: ''
+locked: false

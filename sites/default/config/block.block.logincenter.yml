@@ -1,0 +1,24 @@
+uuid: c8eee5f2-79ce-44f7-b75f-457b912f8e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.fourth-column-footer
+  module:
+    - system
+  theme:
+    - bartik
+id: logincenter
+theme: bartik
+region: footer_fourth
+weight: -13
+provider: null
+plugin: 'system_menu_block:fourth-column-footer'
+settings:
+  id: 'system_menu_block:fourth-column-footer'
+  label: 'Login Center'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

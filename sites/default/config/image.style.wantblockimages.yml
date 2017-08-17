@@ -1,0 +1,16 @@
+uuid: e20636a1-a05e-4d5b-acac-7a13e5922245
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wantblockimages
+label: WantBlockImages
+effects:
+  4e97842c-34cd-49be-8043-eb69b1aa9e9b:
+    uuid: 4e97842c-34cd-49be-8043-eb69b1aa9e9b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 685
+      height: 345

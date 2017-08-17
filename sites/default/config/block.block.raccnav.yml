@@ -11,7 +11,7 @@ dependencies:
 id: raccnav
 theme: bartik
 region: secondary_menu
-weight: -10
+weight: -12
 provider: null
 plugin: 'system_menu_block:racc-nav'
 settings:

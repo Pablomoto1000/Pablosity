@@ -1,0 +1,38 @@
+uuid: f84897df-c214-4c67-913f-3b112469017e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bannerracc
+    - field.storage.block_content.field_bannerracc
+  module:
+    - image
+id: block_content.bannerracc.field_bannerracc
+field_name: field_bannerracc
+entity_type: block_content
+bundle: bannerracc
+label: BannerRacc
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

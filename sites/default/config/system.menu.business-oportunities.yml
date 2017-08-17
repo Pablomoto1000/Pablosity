@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: business-oportunities
-label: 'BUSINESS OPORTUNITIES'
+label: 'Business Oportunities'
 description: ''
 locked: false

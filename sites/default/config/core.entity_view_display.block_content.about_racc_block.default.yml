@@ -1,0 +1,65 @@
+uuid: 3d55b318-d554-4b71-b8c0-9cbf31e87788
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+    - field.field.block_content.about_racc_block.body
+    - field.field.block_content.about_racc_block.field_videoembed
+    - field.field.block_content.about_racc_block.field_why_reading
+  module:
+    - ds
+    - text
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_equal_width
+      library: ds/ds_3col_equal_width
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - body
+      middle:
+        - field_videoembed
+        - field_why_reading
+id: block_content.about_racc_block.default
+targetEntityType: block_content
+bundle: about_racc_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_videoembed:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      link_image_to: ''
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: right
+  field_why_reading:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+hidden: {  }

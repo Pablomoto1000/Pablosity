@@ -1,0 +1,8 @@
+uuid: a1675917-9f54-469b-ad5a-e61486574817
+langcode: en
+status: true
+dependencies: {  }
+id: logo_footer_block
+label: 'Logo Footer Block'
+revision: 0
+description: ''

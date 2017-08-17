@@ -1,0 +1,16 @@
+uuid: ab9f87fb-f9e8-439b-9201-137635b668a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slideshow
+label: Slideshow
+effects:
+  48365d06-f9ee-486d-a8fe-4b9e628efb60:
+    uuid: 48365d06-f9ee-486d-a8fe-4b9e628efb60
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1250

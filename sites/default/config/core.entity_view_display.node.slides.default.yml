@@ -1,0 +1,23 @@
+uuid: d2a4290f-84b4-4366-ab47-20c716687308
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slides.body
+    - field.field.node.slides.field_image
+    - node.type.slides
+  module:
+    - user
+id: node.slides.default
+targetEntityType: node
+bundle: slides
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image: true

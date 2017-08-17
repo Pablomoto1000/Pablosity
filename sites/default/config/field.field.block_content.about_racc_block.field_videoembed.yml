@@ -1,0 +1,25 @@
+uuid: b6932f43-877f-4733-b4ba-e24a38f67e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+    - field.storage.block_content.field_videoembed
+  module:
+    - video_embed_field
+id: block_content.about_racc_block.field_videoembed
+field_name: field_videoembed
+entity_type: block_content
+bundle: about_racc_block
+label: VideoEmbed
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

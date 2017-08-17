@@ -1,0 +1,24 @@
+uuid: 60f1e9e7-9b8e-42d3-96cb-5f4113803d4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.third-column-footer
+  module:
+    - system
+  theme:
+    - bartik
+id: policies
+theme: bartik
+region: footer_third
+weight: -14
+provider: null
+plugin: 'system_menu_block:third-column-footer'
+settings:
+  id: 'system_menu_block:third-column-footer'
+  label: Policies
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

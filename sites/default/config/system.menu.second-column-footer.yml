@@ -1,0 +1,8 @@
+uuid: 1afa6c3a-7cdb-4fbd-a573-98f0878b793b
+langcode: en
+status: true
+dependencies: {  }
+id: second-column-footer
+label: 'Contact Information'
+description: ''
+locked: false

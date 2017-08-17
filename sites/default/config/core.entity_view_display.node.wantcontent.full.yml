@@ -1,0 +1,77 @@
+uuid: a016bd51-dab2-4fdb-a54a-7cb412c7b29c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.wantcontent.field_historyabout
+    - field.field.node.wantcontent.field_image
+    - field.field.node.wantcontent.field_missionaboutracc
+    - image.style.wantblockimages
+    - node.type.wantcontent
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - links
+        - field_image
+      left:
+        - field_historyabout
+      right:
+        - field_missionaboutracc
+id: node.wantcontent.full
+targetEntityType: node
+bundle: wantcontent
+mode: full
+content:
+  field_historyabout:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: wantblockimages
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: header
+  field_missionaboutracc:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  links:
+    weight: 0
+    region: header
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

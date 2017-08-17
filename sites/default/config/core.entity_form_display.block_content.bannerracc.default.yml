@@ -1,0 +1,38 @@
+uuid: 64426409-c188-47d7-8e64-c0a29cca6734
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bannerracc
+    - field.field.block_content.bannerracc.field_bannerracc
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: block_content.bannerracc.default
+targetEntityType: block_content
+bundle: bannerracc
+mode: default
+content:
+  field_bannerracc:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,81 @@
+uuid: 610b3da6-d154-4b1f-b481-9fb08f087c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.get_connected.body
+    - field.field.node.get_connected.field_additional_info
+    - field.field.node.get_connected.field_contact
+    - field.field.node.get_connected.field_image
+    - node.type.get_connected
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - links
+        - body
+        - field_image
+        - field_contact
+        - field_additional_info
+id: node.get_connected.default
+targetEntityType: node
+bundle: get_connected
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_additional_info:
+    weight: 104
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_contact:
+    weight: 103
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  links:
+    weight: 100
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

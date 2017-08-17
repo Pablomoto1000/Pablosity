@@ -1,0 +1,24 @@
+uuid: 285219ae-98ef-49a4-ad74-ab8d2b695e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.second-column-footer
+  module:
+    - system
+  theme:
+    - bartik
+id: contactinformation
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:second-column-footer'
+settings:
+  id: 'system_menu_block:second-column-footer'
+  label: 'Contact Information'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: ff5a74e7-8d07-4bc6-9c98-d6055898420f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_missionaboutracc
+    - node.type.wantcontent
+  module:
+    - text
+id: node.wantcontent.field_missionaboutracc
+field_name: field_missionaboutracc
+entity_type: node
+bundle: wantcontent
+label: RightList
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

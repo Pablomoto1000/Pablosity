@@ -1,0 +1,10 @@
+uuid: 552d40ea-0694-4c1d-aa4d-198b3c3f8204
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.spotlight_students
+label: 'Spotlight Students'
+targetEntityType: node
+cache: true

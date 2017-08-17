@@ -1,0 +1,68 @@
+uuid: b54282ae-bf77-4117-9cdf-d6b54a9f786f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.need_more_info
+    - field.field.contact_message.need_more_info.field_contact_phone
+    - field.field.contact_message.need_more_info.field_email
+    - field.field.contact_message.need_more_info.field_name
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_equal_width
+      library: ds/ds_3col_equal_width
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          middle: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_name
+        - field_or_call
+      middle:
+        - field_contact_phone
+      right:
+        - field_email
+id: contact_message.need_more_info.default
+targetEntityType: contact_message
+bundle: need_more_info
+mode: default
+content:
+  field_contact_phone:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: middle
+  field_email:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+hidden:
+  message: true
