@@ -1,0 +1,17 @@
+name: 'Racc-Theme'
+type: theme
+description: 'A greay theme for Racc site!'
+core: 8.x
+base theme: classy
+libraries:
+- racctheme/racctheme
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  banner_top: 'Banner (top)'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
