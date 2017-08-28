@@ -1,0 +1,15 @@
+name = Icon API
+description = Implements an API for icon providers and an administrative UI for integrating icons through out the site.
+core = 7.x
+package = Icon API
+configure = admin/config/media/icon
+
+files[] = icon.install
+files[] = icon.module
+
+; Information added by Drupal.org packaging script on 2017-05-22
+version = "8.x-1.x-dev"
+core = "8.x"
+project = "icon"
+datestamp = "1495491188"
+

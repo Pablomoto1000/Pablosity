@@ -24,11 +24,23 @@ gulp.task('imagemin', function () {
 gulp.task('sass', function () {
   gulp.src('./themes/custom/racctheme/sass/**/*.scss')
     .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({
+        outputStyle: 'compressed',
+        includePaths: ['node_modules/susy/sass']
+    }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./themes/custom/racctheme/css'));
 });
+
+// gulp.task('sass', function() {
+//     return gulp.src('scss/*.scss')
+//         .pipe(sass({
+//             outputStyle: 'compressed',
+//             includePaths: ['node_modules/susy/sass']
+//         }).on('error', sass.logError))
+//         .pipe(gulp.dest('dist/css'));
+// });
 
 
 gulp.task('uglify', function() {
