@@ -1,0 +1,24 @@
+uuid: f0cd8709-bfe9-49c5-b98a-35aa341fa2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-icons
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_socialicons
+theme: racctheme
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:social-icons'
+settings:
+  id: 'system_menu_block:social-icons'
+  label: 'Social Icons'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

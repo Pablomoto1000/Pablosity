@@ -3,11 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - contact.form.need_more_info
+    - contact.form.contact_us
     - page_manager.page.homepage
     - views.view.featured_news
     - views.view.get_connected
-    - views.view.slideshow
     - views.view.sponsors_block
     - views.view.spotlight_students
     - views.view.upcoming_events
@@ -25,83 +24,72 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    f9dc317a-a37f-471e-a95d-111f16818a94:
-      id: 'views_block:slideshow-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: header
-      weight: 1
-      uuid: f9dc317a-a37f-471e-a95d-111f16818a94
-      context_mapping: {  }
-    f5de8470-b452-462b-930a-5d783f1402de:
+    10ce65fc-9135-4c2c-9cfa-b801ae90f4ad:
       id: 'views_block:wantblockk-block_1'
       label: ''
       provider: views
       label_display: '0'
       views_label: ''
       items_per_page: none
+      context_mapping: {  }
       region: header
-      weight: 2
-      uuid: f5de8470-b452-462b-930a-5d783f1402de
-      context_mapping: {  }
-    088dd204-bccc-424a-b1d5-aadce907cd13:
-      id: 'views_block:spotlight_students-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      context_mapping: {  }
-      region: left
-      uuid: 088dd204-bccc-424a-b1d5-aadce907cd13
+      uuid: 10ce65fc-9135-4c2c-9cfa-b801ae90f4ad
       weight: 1
-    14236692-4f7b-4e86-82c5-be8ca563d82c:
+    c46c58ac-a0bd-47f7-8c92-0a5eef1dfb87:
       id: 'views_block:featured_news-block_1'
       label: ''
       provider: views
-      label_display: '0'
+      label_display: visible
       views_label: ''
       items_per_page: none
       context_mapping: {  }
       region: right
-      uuid: 14236692-4f7b-4e86-82c5-be8ca563d82c
+      uuid: c46c58ac-a0bd-47f7-8c92-0a5eef1dfb87
       weight: 1
-    5e767e01-4e34-4d71-91ee-a6ea53f328ee:
-      id: 'views_block:upcoming_events-block_1'
-      label: 'UPCOMING EVENTS'
-      provider: views
-      label_display: visible
-      views_label: 'UPCOMING EVENTS'
-      items_per_page: none
-      context_mapping: {  }
-      region: footer
-      uuid: 5e767e01-4e34-4d71-91ee-a6ea53f328ee
-      weight: 1
-    58d31a44-5e80-4922-b9c0-5a68025735a7:
-      id: 'views_block:get_connected-block_1'
+    04e92e49-0e81-46b6-93f3-bd3789183f6c:
+      id: 'views_block:spotlight_students-block_1'
       label: ''
       provider: views
-      label_display: '0'
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: left
+      uuid: 04e92e49-0e81-46b6-93f3-bd3789183f6c
+      weight: 1
+    dbfb3d2c-11c5-4d60-9a5c-a3004bef3381:
+      id: 'views_block:upcoming_events-block_1'
+      label: ''
+      provider: views
+      label_display: visible
       views_label: ''
       items_per_page: none
       context_mapping: {  }
       region: footer
-      uuid: 58d31a44-5e80-4922-b9c0-5a68025735a7
-      weight: 2
-    33af696f-405d-49f3-adaf-58f482884217:
-      id: contact_block
-      label: 'NEED MORE INFO'
-      provider: contact_block
+      uuid: dbfb3d2c-11c5-4d60-9a5c-a3004bef3381
+      weight: 1
+    82f4692a-6169-46b2-93ea-45c0d90ca119:
+      id: 'views_block:get_connected-block_1'
+      label: ''
+      provider: views
       label_display: visible
-      contact_form: need_more_info
+      views_label: ''
+      items_per_page: none
       context_mapping: {  }
       region: footer
-      uuid: 33af696f-405d-49f3-adaf-58f482884217
+      uuid: 82f4692a-6169-46b2-93ea-45c0d90ca119
+      weight: 2
+    460f9abc-6709-4aa3-824e-f9f694dddfcc:
+      id: contact_block
+      label: 'Contact block'
+      provider: contact_block
+      label_display: '0'
+      contact_form: contact_us
+      context_mapping: {  }
+      region: footer
+      uuid: 460f9abc-6709-4aa3-824e-f9f694dddfcc
       weight: 3
-    89ae1f59-9003-452b-929a-d7292ac2747b:
+    57e52725-90c7-446f-b587-e255e3dd0127:
       id: 'block_content:0ea01620-bb0f-4fad-ab35-fd550f79d2cf'
       label: 'Banner Rac'
       provider: block_content
@@ -111,9 +99,9 @@ variant_settings:
       view_mode: full
       context_mapping: {  }
       region: footer
-      uuid: 89ae1f59-9003-452b-929a-d7292ac2747b
+      uuid: 57e52725-90c7-446f-b587-e255e3dd0127
       weight: 4
-    d84e4a54-0c63-4ff8-bf67-8239558b7c2c:
+    dea87e51-98d4-498b-afd2-666793b171cf:
       id: 'block_content:66b75314-101b-4ead-8ad1-c0bfaa0829ae'
       label: 'About Racc Block'
       provider: block_content
@@ -123,9 +111,9 @@ variant_settings:
       view_mode: full
       context_mapping: {  }
       region: footer
-      uuid: d84e4a54-0c63-4ff8-bf67-8239558b7c2c
+      uuid: dea87e51-98d4-498b-afd2-666793b171cf
       weight: 5
-    9ce2609f-05df-41f2-8962-19446a9f0c17:
+    f1a7a4b1-3ff9-4ab0-8e01-49a8099dbba6:
       id: 'views_block:sponsors_block-block_1'
       label: ''
       provider: views
@@ -134,7 +122,7 @@ variant_settings:
       items_per_page: none
       context_mapping: {  }
       region: footer
-      uuid: 9ce2609f-05df-41f2-8962-19446a9f0c17
+      uuid: f1a7a4b1-3ff9-4ab0-8e01-49a8099dbba6
       weight: 6
   id: panels_variant
   uuid: c6693c1d-739c-4550-b769-ea411ae2a848

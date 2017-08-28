@@ -1,0 +1,20 @@
+uuid: 23b053c6-bb1e-4c2f-b6ea-69e270308179
+langcode: en
+status: false
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - racctheme
+id: horizontalmenu
+theme: racctheme
+region: primary_menu
+weight: 0
+provider: null
+plugin: responsive_menu_horizontal_menu
+settings:
+  id: responsive_menu_horizontal_menu
+  label: 'Horizontal menu'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

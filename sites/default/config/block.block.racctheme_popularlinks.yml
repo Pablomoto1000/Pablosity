@@ -1,0 +1,24 @@
+uuid: 552d0e4d-55f6-4f03-b07a-28cf43eb675c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.first-column-footer
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_popularlinks
+theme: racctheme
+region: footer
+weight: -11
+provider: null
+plugin: 'system_menu_block:first-column-footer'
+settings:
+  id: 'system_menu_block:first-column-footer'
+  label: 'Popular Links'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

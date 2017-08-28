@@ -177,7 +177,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: sponsorscolor
+      css_class: site-footer
     cache_metadata:
       max-age: -1
       contexts:

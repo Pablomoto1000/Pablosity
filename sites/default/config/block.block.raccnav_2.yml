@@ -1,0 +1,24 @@
+uuid: df84a46d-3fca-42a5-a38b-2eb1e8a965b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.racc-nav
+  module:
+    - system
+  theme:
+    - racctheme
+id: raccnav_2
+theme: racctheme
+region: top_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:racc-nav'
+settings:
+  id: 'system_menu_block:racc-nav'
+  label: 'Racc Nav'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

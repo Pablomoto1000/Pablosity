@@ -417,6 +417,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: slider
     cache_metadata:
       max-age: -1
       contexts:

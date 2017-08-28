@@ -1,0 +1,24 @@
+uuid: a9319ac8-79cb-495b-a2e5-150d6155987c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.third-column-footer
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_policies
+theme: racctheme
+region: footer
+weight: -12
+provider: null
+plugin: 'system_menu_block:third-column-footer'
+settings:
+  id: 'system_menu_block:third-column-footer'
+  label: Policies
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: ef970cbb-6096-4901-b6f9-1d508e8611c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.part_time_staff_positions_
+  module:
+    - ctools
+    - views
+  theme:
+    - racctheme
+id: racctheme_views_block__part_time_staff_positions__block_1
+theme: racctheme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:part_time_staff_positions_-block_1'
+settings:
+  id: 'views_block:part_time_staff_positions_-block_1'
+  label: 'Part-time Staff Positions:'
+  provider: views
+  label_display: visible
+  views_label: 'Part-time Staff Positions:'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      career_opportunities: career_opportunities
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

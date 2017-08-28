@@ -1,0 +1,24 @@
+uuid: 900e7272-95fe-48ec-85e9-2069fdb6b676
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.fourth-column-footer
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_logincenter
+theme: racctheme
+region: footer
+weight: -13
+provider: null
+plugin: 'system_menu_block:fourth-column-footer'
+settings:
+  id: 'system_menu_block:fourth-column-footer'
+  label: 'Login Center'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

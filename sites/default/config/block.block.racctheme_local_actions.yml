@@ -1,0 +1,20 @@
+uuid: 9bb75636-b477-4340-9632-2c066f1bac24
+langcode: en
+status: true
+dependencies:
+  theme:
+    - racctheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: racctheme_local_actions
+theme: racctheme
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

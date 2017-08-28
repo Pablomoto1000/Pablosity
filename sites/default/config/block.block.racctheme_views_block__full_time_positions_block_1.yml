@@ -1,0 +1,32 @@
+uuid: 8bf6420c-6b0a-4d2e-9d3b-ed2708caeed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.full_time_positions
+  module:
+    - ctools
+    - views
+  theme:
+    - racctheme
+id: racctheme_views_block__full_time_positions_block_1
+theme: racctheme
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:full_time_positions-block_1'
+settings:
+  id: 'views_block:full_time_positions-block_1'
+  label: 'Full-time Positions:'
+  provider: views
+  label_display: visible
+  views_label: 'Full-time Positions:'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      career_opportunities: career_opportunities
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

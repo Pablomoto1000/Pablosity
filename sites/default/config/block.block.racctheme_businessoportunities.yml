@@ -1,0 +1,29 @@
+uuid: b80183ad-e208-4a05-9447-05a95867f8e0
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.business-oportunities
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_businessoportunities
+theme: racctheme
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:business-oportunities'
+settings:
+  id: 'system_menu_block:business-oportunities'
+  label: 'BUSINESS OPORTUNITIES'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-racc/current-postings
+    negate: false
+    context_mapping: {  }

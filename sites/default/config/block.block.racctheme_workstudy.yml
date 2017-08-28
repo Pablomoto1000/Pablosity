@@ -1,0 +1,29 @@
+uuid: b2dab07a-ff55-44d4-a5bc-b6cc5ed39981
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.work-study
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_workstudy
+theme: racctheme
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:work-study'
+settings:
+  id: 'system_menu_block:work-study'
+  label: WORK-STUDY
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /admissions/work-study-job-opportunities
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 372a8488-8a9d-4852-862e-92a939d5c982
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admissions
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_admissions
+theme: racctheme
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:admissions'
+settings:
+  id: 'system_menu_block:admissions'
+  label: ADMISSIONS
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/admissions\r\n/admissions/*"
+    negate: false
+    context_mapping: {  }
