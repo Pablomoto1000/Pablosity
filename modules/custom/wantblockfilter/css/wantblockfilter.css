@@ -1,0 +1,9 @@
+/**
+ * Hide <select> and submit-button
+ */
+#views-exposed-form-wantblockk-block-1 .form-type-select {
+	display: none;
+}
+#views-exposed-form-wantblockk-block-1 .form-submit {
+	display: none;
+}

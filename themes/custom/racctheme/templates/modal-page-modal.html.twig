@@ -1,0 +1,22 @@
+<div class="modal fade" id="js-modal-page-show-modal" role="dialog" style="display: none;" data-modal-id="{{ id }}">
+    <div class="modal-page-dialog modal-dialog">
+      <form class="search-form search-page-form" data-drupal-selector="search-form" action="search/node" method="get" id="search-form" accept-charset="UTF-8">
+        <div class="modal-page-content modal-content">
+          <div class="modal-page-content modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title modal-page-title">{{ title }}</h4>
+          </div>
+          <div class="modal-body modal-page-body">
+            <p>{{ text }}</p>
+            <input id="inputsearch" type="search" placeholder="Search RACC" name="keys" value="">
+          </div>
+          <div class="modal-footer modal-page-footer">
+            {% if do_not_show_again %}
+                <input type="checkbox" class="modal-page-please-do-not-show-again" value="{{ id }}"> {{ do_not_show_again }}
+            {% endif %}
+            <input data-drupal-selector="edit-submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" type="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

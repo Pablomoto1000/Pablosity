@@ -1,0 +1,3 @@
+services:
+  modal_page.modals:
+    class: Drupal\modal_page\ModalPage

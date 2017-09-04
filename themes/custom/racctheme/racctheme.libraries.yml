@@ -5,3 +5,4 @@ racctheme:
       css/style.css: { weight: 10 }
   js:
     js/raccjs.js: { }
+    # js/wantblock.js: { }

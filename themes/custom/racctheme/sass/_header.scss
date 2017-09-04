@@ -1,55 +1,62 @@
-@media all and (max-width: 559px) {
-  header {
-    background-color: rgba(255, 255, 255, 0.7);
+// Mobile Code (Mobile First Approach)
+
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  z-index: 1;
+  height: 68px;
+  width: 100%;
+  .logo-header {
+    left: 4.6rem;
+    top: 0.8rem;
     position: absolute;
-    z-index: 1;
-    height: 68px;
-    width: 100%;
-    .logo-header {
-      left: 4.6rem;
-      top: 0.8rem;
-      position: absolute;
-      img {
-        width: 95px;
+    img {
+      width: 95px;
+    }
+  }
+  .main-menu {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    .top-menu {
+      overflow: hidden;
+      background-color: #ff3333;
+      height: 7px;
+      ul {
+        display: none;
       }
     }
-    .main-menu {
-      height: 100%;
-      font-family: 'Raleway', sans-serif;
-      .top-menu {
-        background-color: #ff3333;
-        height: 7px;
-        ul {
-          display: none;
-        }
+    .primary-menu {
+      height: 90%;
+      a#superfish-racc-nav-bottom-toggle {
+        display: none;
       }
-      .primary-menu {
-        height: 90%;
-        a#superfish-racc-nav-bottom-toggle {
-          display: none;
-        }
-        .responsivenav {
-          left: 17rem;
-          top: 0.9rem;
-          position: relative;
-          a {
-            color: black;
-            font-size: 1.7rem;
-            text-decoration: none;
-            &#toggle-icon {
-              font-size: 2rem;
-              padding-left: 1.7rem;
-            }
+      .responsivenav {
+        right: 5%;
+        top: 1.3rem;
+        position: absolute;
+        a {
+          color: black;
+          font-size: 1.7rem;
+          text-decoration: none;
+          &#toggle-icon {
+            font-size: 2rem;
+            padding-left: 1.7rem;
           }
         }
       }
     }
   }
-  .slider {
-    @include span(1 of 1);
+}
+
+// Tablet Breakpoint
+@media all and (min-width: 560px) and (max-width:1029px) {
+  #superfish-racc-nav-bottom {
+    display: none;
   }
 }
-@media all and (min-width: 851px) {
+
+// Desktop Breakpoint
+@media all and (min-width: 1030px) {
   header {
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -58,23 +65,32 @@
     @include span(1 of 1);
     .logo-header {
       @include span(1 of 4);
-      left: 3.4rem;
-      top: 0.8rem;
+      left: 3.2rem;
+      top: 0.6rem;
       position: relative;
+      img {
+        width: 10.9rem;
+      }
     }
     .main-menu {
       @include span(3 at 2 of 4);
-      width: 72.4%;
+      width: 72.6%;
       height: 100%;
       font-family: 'Raleway', sans-serif;
       .top-menu {
-        line-height: 2.7rem;
+        line-height: 2.6rem;
         background-color: #ff3333;
-        font-size: 0.745rem;
-        font-weight: 900;
-        letter-spacing: 2px;
+        font-size: 0.748rem;
+        font-weight: 600;
+        letter-spacing: 2.25px;
         height: 44%;
         color: white;
+        ul {
+          display: block;
+        }
+        li:hover {
+          background-color: #EC2B2B;
+        }
         li:first-child {
           padding-left: 14px;
         }
@@ -86,19 +102,23 @@
           }
         }
         li:last-child {
-          padding: 0;
+          margin-left: -12px;
+          width: 2rem;
         }
-        a.fa.fa-search.is-active {
-          margin-left: -38px;
+        a.fa.fa-search {
           font-size: 1.1rem;
+          margin-left: -25px;
         }
       }
       .primary-menu {
         height: 56%;
         ul {
-          letter-spacing: 0.5px;
-          line-height: 3.7rem;
+          letter-spacing: 0.56px;
+          line-height: 3.84rem;
           li {
+            .sf-depth-1 {
+              height: 59px;
+            }
             &:hover {
                   background-color: white;
                 }
@@ -141,12 +161,6 @@
           }
         }
       }
-    }
-  }
-  .slider {
-    @include span(1 of 1);
-    .slick-prev {
-      color:red;
     }
   }
 }

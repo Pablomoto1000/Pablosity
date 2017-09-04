@@ -1,0 +1,378 @@
+// SlideShow CSS
+
+// Mobile Code (Mobile First Approach)
+
+.layout-banner-top {
+  .slide__grid.grid.grid--0 {
+    padding: 0;
+  }
+  #slick-views-slideshow-block-1-1-slider {
+    margin: 0;
+  }
+  &:hover {
+    .slick__arrow {
+      opacity: 0.7;
+    }
+
+  }
+  .slide__media {
+    .gradient {
+      top: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+    img {
+      width: 100%;
+      height: 446px;
+    }
+  }
+  .slide__caption {
+    bottom: 44.7%;
+    left: 9.6%;
+    font-size: 0.8rem;
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 44rem;
+    a {
+      color: white;
+      &:hover {
+        color: #ff3333;
+      }
+    }
+    .SlideTitle {
+      text-decoration: none;
+      font-size: 2rem;
+      line-height: 2rem;
+      position: absolute;
+      bottom: 16%;
+      left: 9%;
+    }
+    .SlideInfo {
+      display: none;
+      color: white;
+      font-size: 0.97rem;
+      padding-top: 2.2rem;
+      line-height: 24px;
+    }
+  }
+  .slick__arrow {
+    top: 48%;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
+    button:first-child {
+      width: 55px;
+      height: 55px;
+      left: 1rem;
+      background-image: url("../images/prev_icon.png");
+    }
+
+    button:last-child {
+      width: 55px;
+      height: 55px;
+      right: 1.8rem;
+      background-image: url("../images/next_icon.png");
+    }
+    .slick-arrow {
+      &::before {
+        content: '';
+        background-image: url("../images/prev_icon.png");
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    li {
+      padding-left: 3.7rem;
+      button::before {
+        width: 56px;
+        height: 4px;
+        display: block;
+        background: white;
+        opacity: 1;
+        cursor: pointer;
+        text-indent: -9999px;
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+      }
+      &:hover {
+        background: #ff3333;
+        width: 56px;
+        height: 4px;
+        cursor: pointer;
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        button::before {
+          opacity: 0;
+        }
+      }
+    }
+    .slick-active {
+      background: #ff3333;
+      width: 56px;
+      height: 4px;
+      cursor: pointer;
+      -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      button::before {
+        opacity: 0;
+      }
+    }
+  }
+}
+// Tablet Breakpoint
+@media all and (min-width: 560px) and (max-width:1029px) {
+}
+
+// Desktop Breakpoint
+@media all and (min-width: 1030px) {
+  .layout-banner-top {
+    .slide__media {
+      img {
+        height: 1240px;
+      }
+    }
+    .slick__arrow {
+      top: 47%;
+    }
+    .slick-dots {
+      bottom: 42.5%;
+      padding-left: 10.4%;
+      text-align: left;
+      li {
+        padding-left: 3.7rem;
+        button::before {
+          width: 56px;
+          height: 4px;
+          display: block;
+          background: white;
+          opacity: 1;
+          cursor: pointer;
+          text-indent: -9999px;
+          -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+        }
+        &:hover {
+          background: #ff3333;
+          width: 56px;
+          height: 4px;
+          cursor: pointer;
+          -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+          button::before {
+            opacity: 0;
+          }
+        }
+      }
+      .slick-active {
+        background: #ff3333;
+        width: 56px;
+        height: 4px;
+        cursor: pointer;
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        button::before {
+          opacity: 0;
+        }
+      }
+    }
+    .slide__caption {
+      bottom: 44.7%;
+      left: 9.6%;
+      font-size: 0.8rem;
+      font-family: 'Raleway';
+      font-weight: 300;
+      width: 44rem;
+      a {
+        color: white;
+        &:hover {
+          color: #ff3333;
+        }
+      }
+      .SlideTitle {
+        text-decoration: none;
+        font-size: 2.8rem;
+        line-height: 3rem;
+        left:0;
+        position: relative;
+        bottom: -6%;
+      }
+      .SlideInfo {
+        display: block;
+        color: white;
+        font-size: 0.97rem;
+        padding-top: 2.2rem;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+//
+// .layout-banner-top {
+//   &:hover {
+//     .slick__arrow {
+//       opacity: 0.7;
+//     }
+//
+//   }
+//   .slide__media {
+//     .gradient {
+//       top: 0;
+//       position: absolute;
+//       height: 100%;
+//       width: 100%;
+//       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+//     }
+//     img {
+//       width: 100%;
+//       height: 1240px;
+//     }
+//   }
+//   .slide__caption {
+//     bottom: 44.7%;
+//     left: 9.6%;
+//     font-size: 0.8rem;
+//     font-family: 'Raleway';
+//     font-weight: 300;
+//     width: 44rem;
+//     a {
+//       color: white;
+//       &:hover {
+//         color: #ff3333;
+//       }
+//     }
+//     .SlideTitle {
+//       text-decoration: none;
+//       font-size: 2.8rem;
+//       line-height: 3rem;
+//       position: relative;
+//       bottom: -6%;
+//     }
+//     .SlideInfo {
+//       color: white;
+//       font-size: 0.97rem;
+//       padding-top: 2.2rem;
+//       line-height: 24px;
+//     }
+//   }
+//   .slick__arrow {
+//     top: 47%;
+//     opacity: 0;
+//     &:hover{
+//       opacity: 1;
+//     }
+//     button:first-child {
+//       width: 55px;
+//       height: 55px;
+//       left: 1rem;
+//       background-image: url("../images/prev_icon.png");
+//     }
+//
+//     button:last-child {
+//       width: 55px;
+//       height: 55px;
+//       right: 1.8rem;
+//       background-image: url("../images/next_icon.png");
+//     }
+//     .slick-arrow {
+//       &::before {
+//         content: '';
+//         background-image: url("../images/prev_icon.png");
+//       }
+//     }
+//   }
+//
+//   .slick-dots {
+//     bottom: 42.5%;
+//     padding-left: 10.4%;
+//     text-align: left;
+//     li {
+//       padding-left: 3.7rem;
+//       button::before {
+//         width: 56px;
+//         height: 4px;
+//         display: block;
+//         background: white;
+//         opacity: 1;
+//         cursor: pointer;
+//         text-indent: -9999px;
+//         -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -webkit-border-radius: 20px;
+//         -moz-border-radius: 20px;
+//         border-radius: 20px;
+//       }
+//       &:hover {
+//         background: #ff3333;
+//         width: 56px;
+//         height: 4px;
+//         cursor: pointer;
+//         -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//         -webkit-border-radius: 20px;
+//         -moz-border-radius: 20px;
+//         border-radius: 20px;
+//         button::before {
+//           opacity: 0;
+//         }
+//       }
+//     }
+//     .slick-active {
+//       background: #ff3333;
+//       width: 56px;
+//       height: 4px;
+//       cursor: pointer;
+//       -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//       -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//       -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//       box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+//       -webkit-border-radius: 20px;
+//       -moz-border-radius: 20px;
+//       border-radius: 20px;
+//       button::before {
+//         opacity: 0;
+//       }
+//     }
+//   }
+// }

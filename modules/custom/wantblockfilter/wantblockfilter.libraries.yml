@@ -1,0 +1,13 @@
+wantblockfilter.forms:
+   version: VERSION
+   css:
+     theme:
+       css/wantblockfilter.css: {}
+
+wantblockfilter.enable:
+  version: VERSION
+  js:
+    js/wantblockfilter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

@@ -1,0 +1,57 @@
+<?php
+function wantblockfilter_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+  /**
+   * Apply the form_alter to a specific form #id
+   * the form #id can be found through inspecting the markup
+   */
+  if($form['#id'] == 'views-exposed-form-wantblockk-block-1') {
+  /**
+   * Include a js and css, which was defined in popolo_custom.libraries.yml
+   */
+  $form['#attached']['library'][] = 'wantblockfilter/wantblockfilter.enable';
+  $form['#attached']['library'][] = 'wantblockfilter/wantblockfilter.forms';
+	/**
+	 * Extract the options from the Views Exposed Filter <select>-list
+	 */
+  $links = $form['nid']['#options'];
+  /**
+   * Iterate over the options ($links) to build an array ($pop_array) of links
+   */
+  $i = 0; // Initiate counter/index
+  $pop_array = array();
+	foreach ($links as $tid => $term_name) {
+		if ($tid == 'All') {
+			$pop_array[$i]['#markup'] = '<span class="filter-tab"><a href="" class="active" id="' .$tid . '">' . $term_name . '</a></span>';
+		}
+		else {
+			$pop_array[$i]['#markup'] = '<span class="filter-tab"><a href="" id="' .$tid . '">' . $term_name . '</a><p class="fa fa-chevron-down"></p></span>';
+		}
+    $pop_array[$i]['#attributes']['id'] = 'b';
+    $i++;
+     // Increase counter/index
+
+  }
+  // var_dump ();
+
+	/**
+	 * Create the item-list the form should render
+	 */
+		$form['links'] = [
+			'#theme' => 'item_list',
+		  '#items' => $pop_array,
+		  '#attributes' => array('class' => array('pop-list')),
+
+      ];
+	}
+
+  else {
+  	//nothing...
+  }
+}
+function wantblockfilter_theme_suggestions_item_list_alter(&$suggestions, &$vars) {
+  $request = \Drupal::routeMatch()->getRouteObject()->getDefault('_entity_view');
+   if (!empty($request)) {
+     $suggestions[] = 'item_list_custom_' . $request;
+   }
+}

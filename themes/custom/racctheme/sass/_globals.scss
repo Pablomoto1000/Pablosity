@@ -8,6 +8,7 @@ html{
 
 body{
     -webkit-font-smoothing: antialiased;
+    // width: 1600px;
 }
 
 *{
@@ -18,6 +19,9 @@ body{
   @include container(100%);
 }
 
+.image-style-bannerracc {
+  width: 100%;
+}
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */

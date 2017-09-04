@@ -1,0 +1,392 @@
+// Styling of the slider block
+
+// Mobile Code (Mobile First Approach)
+.wantblock {
+  background: white;
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: 'Raleway';
+  .view-filters {
+    width: 100%;
+    background: transparent;
+    .form--inline .form-item {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    .form-item, .form-actions {
+      margin: 0;
+      padding: 0;
+    }
+    .item-list ul {
+      margin: 0;
+    }
+    .item-list li {
+      margin: 0;
+      width: 100%;
+      height: 5.26rem;
+      list-style: none;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.5rem;
+      cursor: pointer;
+      a {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        height: 100%;
+        line-height: 5rem;
+      }
+      #\33 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .fa.fa-chevron-down {
+      color: white;
+      position: absolute;
+      right: 5%;
+      margin-top: -3.6rem;
+      text-align: right;
+    }
+
+    #enrollnow {
+      background-color: #ff3333;
+      a {
+        color: black;
+        display: block;
+        background: white;
+        height: 2.5rem;
+        width: 13rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 auto;
+        position: relative;
+        top: 25%;
+      }
+    }
+    #b1 {background-color: #88898e;}
+    #b2 {background-color: #9a9ba0;}
+    #b3 {background-color: #88898e;}
+    #b4 {background-color: #9a9ba0;}
+    #b1, #b2, #b3, #b4 {&:hover {background-color: #ff3333;}}
+  }
+  .view-content {
+    width: 100%;
+    .grid__content {
+      width: 100%;
+      color: black;
+      .group-header {
+        padding-bottom: 3rem;
+        .gradient {
+          top: 0;
+          position: absolute;
+          height: 24.30rem;
+          width: 100%;
+          background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
+        }
+        #wantblockimageoff {
+          display: none;
+        }
+        #wantblockimage {
+          display: block;
+        }
+        .image-style-wantblockimages {
+          width: 100%;
+          height: 24.30rem;
+        }
+      }
+      .group-left {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      h2 {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+      }
+      a {
+        color: red;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 0.75rem
+      }
+      ul {
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 0.75rem;
+        li {
+          margin: 0;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Tablet Breakpoint
+@media all and (min-width: 560px) and (max-width:1029px) {
+}
+
+// Desktop Breakpoint
+@media all and (min-width: 1030px) {
+  .ds-2col-stacked-fluid:first-of-type {
+    .group-header {
+      padding-bottom: 29rem;
+    }
+  }
+  .fa.fa-chevron-down {
+    display: none;
+  }
+
+  .contextual-region {
+  position: unset;
+  }
+  .wantblock {
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 850px;
+  display: inline-flex;
+  width: 73.4%;
+  font-family: 'Raleway';
+  .view-filters {
+    width: 31%;
+    background: transparent;
+    .form--inline .form-item {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    .form-item, .form-actions {
+      margin: 0;
+      padding: 0;
+    }
+    .item-list li {
+      margin: 0;
+      width: 100%;
+      height: 12.15rem;
+      list-style: none;
+      text-align: center;
+      font-weight: 300;
+      font-size: 2.17rem;
+      cursor: pointer;
+      padding-top: 5rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 19% 15%;
+        line-height: unset;
+        display: inline;
+      }
+      #\33 {
+        padding: 16% 21%;
+        margin: 0 -21% 0 -21%;
+      }
+    }
+    .pop-list li a.active {
+      background-color: #0071b3;
+    }
+
+    // #edit-actions {input{display: none;}}
+    #b1 {background-color: #88898e;}
+    #b2 {background-color: #9a9ba0;}
+    #b3 {background-color: #B0B0B0;padding-top: 3.9rem;}
+    #b4 {background-color: #C8C8C8;}
+    #b1, #b2, #b3, #b4 {&:hover {background-color: #ff3333;}}
+
+  }
+  .view-content {
+    width: 69%;
+    .grid__content {
+      width: 100%;
+      color: black;
+      .group-header {
+        padding-bottom: 3rem;
+        .gradient {
+          top: 0;
+          position: absolute;
+          height: 24.30rem;
+          width: 100%;
+          background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
+        }
+        #wantblockimageoff {
+          display: none;
+        }
+        #wantblockimage {
+          display: block;
+        }
+        .image-style-wantblockimages {
+          width: 100%;
+          height: 24.30rem;
+        }
+      }
+      .group-left {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      h2 {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+      }
+      a {
+        color: red;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 1.1rem;
+      }
+      ul {
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 1.1rem;
+        li {
+          margin: 0;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  }
+}
+
+
+//   .ds-2col-stacked-fluid:first-of-type {
+//     .group-header {
+//       padding-bottom: 29rem;
+//     }
+//   }
+//
+// .contextual-region {
+//   position: unset;
+// }
+// .wantblock {
+//   background: white;
+//   position: absolute;
+//   right: 0;
+//   top: 850px;
+//   display: inline-flex;
+//   width: 73.4%;
+//   font-family: 'Raleway';
+//   .view-filters {
+//     width: 31%;
+//     background: transparent;
+//     .form--inline .form-item {
+//       float: left;
+//       margin: 0;
+//       padding: 0;
+//     }
+//     .form-item, .form-actions {
+//       margin: 0;
+//       padding: 0;
+//     }
+//     .item-list li {
+//       margin: 0;
+//       width: 100%;
+//       height: 12.15rem;
+//       list-style: none;
+//       text-align: center;
+//       font-weight: 300;
+//       font-size: 2.17rem;
+//       cursor: pointer;
+//       padding-top: 5rem;
+//
+//       a {
+//         color: white;
+//         text-decoration: none;
+//         padding: 19% 15%;
+//       }
+//       #\33 {
+//         padding: 16% 21%;
+//         margin: 0 -21% 0 -21%;
+//       }
+//     }
+//     .pop-list li a.active {
+//     	background-color: #0071b3;
+//     }
+//
+//     // #edit-actions {input{display: none;}}
+//     #b1 {background-color: #88898e;}
+//     #b2 {background-color: #9a9ba0;}
+//     #b3 {background-color: #B0B0B0;padding-top: 3.9rem;}
+//     #b4 {background-color: #C8C8C8;}
+//     #b1, #b2, #b3, #b4 {&:hover {background-color: #ff3333;}}
+//
+//   }
+//   .view-content {
+//     width: 69%;
+//     .grid__content {
+//       width: 100%;
+//       color: black;
+//       .group-header {
+//         padding-bottom: 3rem;
+//         .gradient {
+//           top: 0;
+//           position: absolute;
+//           height: 24.30rem;
+//           width: 100%;
+//           background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
+//         }
+//         #wantblockimageoff {
+//           display: none;
+//         }
+//         #wantblockimage {
+//           display: block;
+//         }
+//         .image-style-wantblockimages {
+//           width: 100%;
+//           height: 24.30rem;
+//         }
+//       }
+//       .group-left {
+//         padding-left: 3rem;
+//         padding-right: 3rem;
+//       }
+//       h2 {
+//         width: 100%;
+//         font-size: 2rem;
+//         font-weight: 300;
+//         line-height: 2.5rem;
+//       }
+//       a {
+//         color: red;
+//         text-decoration: none;
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//       p {
+//         margin: 0;
+//         padding-top: 2rem;
+//         font-size: 1.1rem;
+//       }
+//       ul {
+//         margin: 0;
+//         padding-top: 2rem;
+//         font-size: 1.1rem;
+//         li {
+//           margin: 0;
+//           padding-bottom: 0.5rem;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -16,3 +16,15 @@ racc.wide:
   weight: 2
   multipliers:
     - 1x
+racc.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 560px) and (max-width:1029px)'
+  weight: 1
+  multipliers:
+    - 1x
+racc.homepageWide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1030px)'
+  weight: 2
+  multipliers:
+    - 1x
