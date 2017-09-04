@@ -1,0 +1,9 @@
+enabled_fonts:
+  - 'http://www.google.com/webfonts/family?family=Raleway&subset=latin#100'
+  - 'http://www.google.com/webfonts/family?family=Raleway&subset=latin#500'
+  - 'http://www.google.com/webfonts/family?family=Raleway&subset=latin#300'
+  - 'http://www.google.com/webfonts/family?family=Raleway&subset=latin#600'
+  - 'http://www.google.com/webfonts/family?family=Raleway&subset=latin#900'
+load_all_enabled_fonts: 1
+_core:
+  default_config_hash: r8uAx4mTBwCkgDFbdKCmhjgbb91BQ4HbWSYRKrlowMY

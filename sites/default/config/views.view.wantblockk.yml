@@ -58,9 +58,9 @@ display:
         type: blazy
         options:
           style: column
-          grid: 2
-          grid_medium: 2
-          grid_small: 2
+          grid: 1
+          grid_medium: 1
+          grid_small: 1
       row:
         type: 'entity:node'
         options:
@@ -168,21 +168,21 @@ display:
             description: ''
             identifier: nid
             optional: false
-            widget: radios
+            widget: select
             multiple: false
             remember: false
             default_group: '1'
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'PROSPECTIVE STUDENTS'
+                title: 'I WANT TO'
                 operator: '='
                 value:
                   value: '60'
                   min: ''
                   max: ''
               2:
-                title: 'GET STARTED'
+                title: 'APPLY NOW'
                 operator: '='
                 value:
                   value: '61'
@@ -196,7 +196,7 @@ display:
                   min: ''
                   max: ''
               4:
-                title: 'CAMPUS LIFE'
+                title: 'STUDENT LIFE'
                 operator: '='
                 value:
                   value: '63'
@@ -229,6 +229,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
+      css_class: wantblock
     cache_metadata:
       max-age: -1
       contexts:

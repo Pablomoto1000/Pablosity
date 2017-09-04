@@ -35,11 +35,13 @@ module:
   history: 0
   icon: 0
   image: 0
+  kint: 0
   layout_discovery: 0
   libraries: 0
   link: 0
   menu_link_attributes: 0
   menu_ui: 0
+  modal_page: 0
   node: 0
   options: 0
   page_cache: 0
@@ -71,9 +73,14 @@ module:
   user: 0
   video_embed_field: 0
   views_ui: 0
+  wantblockfilter: 0
+  webprofiler: 0
   ds: 1
+  fontyourface: 1
   menu_link_content: 1
   pathauto: 1
+  google_fonts_api: 10
+  local_fonts: 10
   views: 10
   paragraphs: 11
   standard: 1000

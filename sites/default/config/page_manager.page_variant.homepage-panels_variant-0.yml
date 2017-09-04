@@ -24,17 +24,6 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    10ce65fc-9135-4c2c-9cfa-b801ae90f4ad:
-      id: 'views_block:wantblockk-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      context_mapping: {  }
-      region: header
-      uuid: 10ce65fc-9135-4c2c-9cfa-b801ae90f4ad
-      weight: 1
     c46c58ac-a0bd-47f7-8c92-0a5eef1dfb87:
       id: 'views_block:featured_news-block_1'
       label: ''
@@ -124,6 +113,17 @@ variant_settings:
       region: footer
       uuid: f1a7a4b1-3ff9-4ab0-8e01-49a8099dbba6
       weight: 6
+    aa846791-d499-48b3-bd7f-6a26a51c48f6:
+      id: 'views_block:wantblockk-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: header
+      uuid: aa846791-d499-48b3-bd7f-6a26a51c48f6
+      weight: 1
   id: panels_variant
   uuid: c6693c1d-739c-4550-b769-ea411ae2a848
   label: null
