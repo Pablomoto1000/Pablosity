@@ -4,15 +4,22 @@ header {
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   z-index: 1;
-  height: 68px;
+  height: 72px;
   width: 100%;
   .logo-header {
-    left: 4.6rem;
-    top: 0.8rem;
     position: absolute;
-    img {
-      width: 95px;
+    // width: 65%;
+    height: 100%;
+    @include span(2 of 3);
+    #block-racctheme-branding {
+      text-align: center;
+      img {
+        width: 100px;
+        position: relative;
+        top: 0.95rem;
+      }
     }
+
   }
   .main-menu {
     height: 100%;
@@ -21,7 +28,7 @@ header {
       overflow: hidden;
       background-color: #ff3333;
       height: 7px;
-      ul {
+      ul.menu {
         display: none;
       }
     }
@@ -30,20 +37,81 @@ header {
       a#superfish-racc-nav-bottom-toggle {
         display: none;
       }
-      .responsivenav {
-        right: 5%;
-        top: 1.3rem;
-        position: absolute;
-        a {
-          color: black;
-          font-size: 1.7rem;
-          text-decoration: none;
-          &#toggle-icon {
-            font-size: 2rem;
-            padding-left: 1.7rem;
+      #block-responsivemenumobileicon {
+        position: static;
+        .responsivenav {
+          right: 0;
+          top: 10%;
+          position: absolute;
+          height: 90%;
+          background: rgba(255, 255, 255, 0.3);
+          width: 8rem;
+          .responsivenavicons {
+            text-align: center;
+            position: relative;
+            top: 1rem;
+            & > a {
+              color: black;
+              font-size: 2rem;
+              text-decoration: none;
+              &#toggle-icon {
+                padding-left: 1.7rem;
+              }
+            }
           }
         }
       }
+      .fa.fa-language {
+        font-family: 'Raleway',sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #A0A0A0 !important;
+        font-size: 1rem;
+        &::before {
+          color: #606060;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Menu
+#off-canvas {
+  background-color: #eaeaea;
+  // .mm-panels > .mm-panel.mm-hasnavbar {
+  //   padding-top: 0;
+  //
+  // }
+  .mm-navbar > .mm-title {
+    font-family: 'Raleway',sans-serif;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .mm-panels > #mm-1{
+    padding-top: 0;
+    .mm-navbar {
+      display: none;
+    }
+  }
+  ul.menu.mm-listview{
+    border-color: transparent;
+    & > li {
+      & > a:last-child {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Raleway',sans-serif;
+      }
+    }
+  }
+  .mm-next::after, .mm-prev::before {
+    border-color: #ff3333;
+  }
+  #mm-2 {
+    .mm-btn.mm-prev {
+      display: block;
     }
   }
 }
@@ -68,8 +136,13 @@ header {
       left: 3.2rem;
       top: 0.6rem;
       position: relative;
-      img {
-        width: 10.9rem;
+      #block-racctheme-branding {
+        text-align: left;
+        img {
+          width: 175px;
+          position: relative;
+          top: 0;
+        }
       }
     }
     .main-menu {
@@ -77,6 +150,17 @@ header {
       width: 72.6%;
       height: 100%;
       font-family: 'Raleway', sans-serif;
+      ul.menu, ul#superfish-racc-nav-bottom {
+        margin-left: 0em;
+        li{
+          display: inline-block;
+          height: 100%;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
       .top-menu {
         line-height: 2.6rem;
         background-color: #ff3333;
@@ -85,79 +169,98 @@ header {
         letter-spacing: 2.25px;
         height: 44%;
         color: white;
-        ul {
+        ul.menu {
           display: block;
-        }
-        li:hover {
-          background-color: #EC2B2B;
-        }
-        li:first-child {
-          padding-left: 14px;
-        }
-        a {
-          color: #F8F8FF;
-          padding: 0 2rem;
-          &:hover {
-            color: white;
+          li:hover {
+            background-color: #EC2B2B;
           }
-        }
-        li:last-child {
-          margin-left: -12px;
-          width: 2rem;
-        }
-        a.fa.fa-search {
-          font-size: 1.1rem;
-          margin-left: -25px;
+          li:first-child {
+            padding-left: 14px;
+          }
+          a {
+            color: #F8F8FF;
+            padding: 0 2rem;
+            &:hover {
+              color: white;
+            }
+          }
+          li:last-child {
+            margin-left: -12px;
+            width: 2rem;
+          }
+          a.fa.fa-search {
+            font-size: 0;
+            margin-left: -25px;
+            &::before {
+              font-size: 1.1rem;
+            }
+          }
         }
       }
       .primary-menu {
         height: 56%;
-        ul {
-          letter-spacing: 0.56px;
-          line-height: 3.84rem;
-          li {
-            .sf-depth-1 {
-              height: 59px;
-            }
-            &:hover {
-                  background-color: white;
-                }
-            a {
-              padding: 0 1.9rem;
-              color: black;
-            font-size: 0.99rem;
-            }
-            ul {
-              margin-top: 1.2rem;
-              line-height: 1rem;
-              li {
-                padding: 1rem 2rem 1rem 0.5rem;
-                background: white;
+        .region.region-primary-menu {
+          height: 100%;
+          #block-raccnavbottom-3 {
+            height: 100%;
+            width: 100%;
+            ul#superfish-racc-nav-bottom {
+              height: 100%;
+              width: 100%;
+              li.sf-depth-1 {
+                height: 100%;
+                width: 14.45%;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-align: center;
                 &:hover {
-                  background: #eaeaea;
+                      background-color: white;
                 }
-                a {
-                  font-size: 0.7rem;
+                & > a {
+                  padding: 0;
+                  color: black;
+                  font-size: 0.99rem;
+                  height: 100%;
+                  line-height: 3.8rem;
                 }
+                & > ul {
+                  margin-top: 1.2rem;
+                  line-height: 1rem;
+                  & > li {
+                    padding: 1rem 2rem 1rem 0.5rem;
+                    background: white;
+                    text-align: left;
+                    &:hover {
+                      background: #eaeaea;
+                    }
+                    & > a {
+                      padding: 0 1.9rem;
+                      color: black;
+                      font-size: 0.7rem;
+                    }
+                  }
+                }
+              }
+              & > li:first-child {
+                width: 12.7%;
+              }
+              & > li:last-child {
+                width: 6%;
+              }
+              .fa.fa-language {
+                font-size: 1rem;
               }
             }
           }
-        }
-        .applyraccbar {
-          font-weight: 900;
-        }
-        .aboutracc {
-          padding-left: 1rem;
-        }
-      }
-      ul{
-        margin-left: 0em;
-        li{
-          display: inline-block;
-          height: 100%;
-          a {
-            text-decoration: none;
-            text-transform: uppercase;
+          ul.sf-menu a, ul.sf-menu span.nolink {
+            display: block;
+            padding: 1em 0;
+          }
+          .applyraccbar {
+            font-weight: 900;
+          }
+          .aboutracc {
+            padding-left: 1rem;
           }
         }
       }

@@ -1,0 +1,92 @@
+footer {
+  background-color: #323339;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  #block-responsivefooterbuttons {
+    padding: 0 15px;
+    width: 92.42424%;
+    float: left;
+    margin-left: 3.78788%;
+    margin-right: 3.78788%;
+    padding-top: 4.8em;
+    margin-bottom: 2.2rem;
+    .field__item {
+      width: 100%;
+      margin-bottom: 1.2em;
+      & > a {
+        letter-spacing: 1px;
+        text-decoration: none;
+        background-color: #231f20;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0.8em 0 0.5em 0;
+        font-family: 'Raleway',sans-serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: white;
+        line-height: 1.25rem;
+      }
+    }
+  }
+  #block-racctheme-logincenter, #block-racctheme-policies-menu, #block-racctheme-popularlinks, #block-racctheme-contactinformation, ul.menu {
+    display: none;
+  }
+  #block-racctheme-logofooterblock {
+    .block-content--type-logo-footer-block {
+      .group-header {
+        & > .field--name-field-bannerracc {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        & > .field--name-body {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 2rem;
+          p {
+            font-family: 'Raleway',sans-serif;
+            font-weight: 100;
+            text-align: center;
+            margin-bottom: 0;
+            color: #fff;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+  #block-racctheme-socialicons {
+    ul.menu {
+      display: block;
+      & > li  {
+        width: 33.33333%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+        float: left;
+        & > a {
+          width: 40px;
+          height: 40px;
+          margin: 0;
+          padding: 0;
+          color: transparent;
+          font-size: 35px;
+          letter-spacing: 20px;
+          color: transparent;
+          padding: 0.5rem;
+          text-decoration: none;
+          &::before {
+            color: white;
+          }
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

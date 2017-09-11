@@ -33,13 +33,24 @@
         }
       });
       var nopadding = document.getElementById('js-modal-page-show-modal')
-      var nobodypadding = document.getElementsByClassName('fontyourface path-frontpage modal-open')[0];
+      var nobodypadding = document.getElementsByClassName('modal-open')[0];
       if (document.body.contains(nopadding)) {
         nopadding.style.padding = '0';
       }
       if (document.body.contains(nobodypadding)) {
         nobodypadding.style.padding = '0';
+        modalcontent = document.getElementsByClassName('modal-page-content')[0];
+        closebutton = modalcontent.getElementsByClassName('close')[0];
+        modalcontent = document.getElementsByClassName('modal-page-dialog')[0];
+        closebutton.onclick = function(){window.history.back()}
+        window.addEventListener('click', function(e){
+          if (modalcontent.contains(e.target)){
+          } else{
+            window.history.back();
+          }
+        });
       }
+
     }
   };
 })(jQuery, Drupal);

@@ -1,0 +1,325 @@
+
+// Mobile Code (Mobile First Approach)
+#block-racctheme-content {
+  .ds-2col-stacked-fluid.clearfix {
+    & > .group-right, & > .group-left {
+      float: unset;
+      width: 100%;
+      padding: 0 6% 0 6%;
+    }
+    // Student Spotlight
+    & > .group-left {
+      & > .block-region-left {
+        & > .block-views-blockspotlight-students-block-1 {
+          position: relative;
+          top: 5.5rem;
+          & > h2 {
+            position: relative;
+            top: 0;
+            font-family: 'Raleway',sans-serif;
+            font-weight: 400;
+            color: #444a5a;
+            font-size: 1.49rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            padding-left: 0.5rem;
+          }
+          .view-id-spotlight_students {
+            & > .more-link {
+              position: absolute;
+              top: 7px;
+              right: 0;
+              & > a {
+                font-family: 'Raleway',sans-serif;
+                font-size: 15px;
+                color: #595959;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            & > .view-content {
+              .node.node--type-news.node--view-mode-spotlight-students.ds-2col-fluid.clearfix {
+                & > .group-right, & > .group-left {
+                  float: unset;
+                  width: 100%;
+                }
+                & > .group-left {
+                  .field__item {
+                    height: 20.4rem;
+                    & > a {
+                      .image-style-large {
+                        width: 100%;
+                        height: 20.4rem;
+                        &:hover {
+                          opacity: 0.6;
+                        }
+                      }
+                    }
+                  }
+                }
+                & > .group-right {
+                  font-size: 0.875rem;
+                  font-family: 'Open Sans',sans-serif;
+                  font-weight: 400;
+                  color: white;
+                  background: #87888e;
+                  padding: 7% 0 4% 9%;
+                  & > .field--name-node-title > .field__item > h2 > a {
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans',sans-serif;
+                    font-weight: 400;
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                  & > .field--name-field-description > .field__item {
+                    display: none;
+                  }
+                  & > .field--type-text-with-summary > .field__item > p {
+                    font-size: 0.8rem;
+                    line-height: 1.3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // Featured News
+    & > .group-right {
+      margin-top: 6.5rem;
+      & > .block-region-right {
+        & > .block-views-blockfeatured-news-block-1 {
+          .view-id-featured_news {
+            & > .view-content {
+              .views-row.clearfix.row-1 {
+                & > .views-col.col-1, & > .views-col.col-2 {
+                  float: unset;
+                  width: 100% !important;
+                  position: relative;
+                  margin-bottom: 0.9rem;
+                  & > .views-field-field-news-image {
+                    .image-style-large {
+                      width: 100%;
+                      height: 100%;
+                      &:hover {
+                        opacity: 0.6;
+                      }
+                    }
+                  }
+                  & > .views-field-field-description {
+                    & > .field-content {
+                      & > a {
+                        position: absolute;
+                        bottom: 1.5rem;
+                        color: white;
+                        text-decoration: none;
+                        left: 1.5rem;
+                        font-family: 'Raleway',sans-serif;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Tablet Breakpoint
+// Featured News Tablet Layout
+@media all and (min-width: 600px) and (max-width:1279px) {
+  #block-racctheme-content {
+    .ds-2col-stacked-fluid.clearfix {
+      // Featured News
+      & > .group-right {
+        & > .block-region-right {
+          & > .block-views-blockfeatured-news-block-1 {
+            .view-id-featured_news {
+              & > .view-content {
+                .views-row.clearfix.row-1 {
+                  & > .views-col.col-1, & > .views-col.col-2 {
+                    width: 49% !important;
+                  }
+                  & > .views-col.col-1 {
+                    float: left;
+                    margin-right: 2%;
+                  }
+                  & > .views-col.col-2 {
+                    float: right;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Student Spotlight Tablet Layout
+@media all and (min-width: 960px) and (max-width:1279px) {
+  #block-racctheme-content {
+    .ds-2col-stacked-fluid.clearfix {
+      // Student Spotlight
+      & > .group-left {
+        & > .block-region-left {
+          & > .block-views-blockspotlight-students-block-1 {
+            .view-id-spotlight_students {
+              & > .view-content {
+                .node.node--type-news.node--view-mode-spotlight-students.ds-2col-fluid.clearfix {
+                  & > .group-left {
+                    float: left;
+                    width: 50%;
+                  }
+                  & > .group-right {
+                    float: right;
+                    width: 50%;
+                    padding: 3%;
+                    height: 20.4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1030px) and (max-width: 1279px) {
+  .layout-content {
+    margin-top: 28.3rem;
+  }
+}
+// Desktop Breakpoint
+@media all and (min-width: 1280px) {
+  .layout-content {
+    margin-top: 28.3rem;
+    #block-racctheme-content {
+      .ds-2col-stacked-fluid.clearfix {
+        & > .group-left, & > .group-right {
+          width: 50%;
+        }
+        & > .group-left {
+          float: left;
+          width: 50%;
+          padding: 0 0 0 2.5%;
+          & > .block-region-left {
+            & > .block-views-blockspotlight-students-block-1 {
+              position: unset;
+              & > h2 {
+                font-size: 2.19rem;
+                margin-bottom: 2rem;
+                padding-left: 0;
+                font-weight: 300;
+              }
+              .view-id-spotlight_students {
+                & > .more-link {
+                  right: 5rem;
+                  top: 106rem;
+                }
+                & > .view-content {
+                  .node.node--type-news.node--view-mode-spotlight-students.ds-2col-fluid.clearfix {
+                    width: 99%;
+                    height: 22rem;
+                    & > .group-left {
+                      float: left;
+                      width: 49.2%;
+                      height: 100%;
+                      & > .field--name-field-news-image {
+                        height: 100%;
+                        & > .field__item {
+                          height: 100%;
+                          & > a {
+                            & > .image-style-large {
+                              height: 100%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    & > .group-right {
+                      float: right;
+                      width: 50.8%;
+                      height: 100%;
+                      padding: 3.5%;
+                      & > .field--name-node-title > .field__item  > h2 > a {
+                        font-size: 1.4rem;
+                      }
+                      & > .field--name-field-description > .field__item {
+                        display: block;
+                        margin: 61px 0 0 -4px;
+                        font-size: 2.15rem;
+                        font-weight: 300;
+                        & > a {
+                          color: white;
+                          text-decoration: none;
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+                      }
+                      & > .field--type-text-with-summary > .field__item > p {
+                        font-size: 0.95rem;
+                        line-height: 1.65rem;
+                        margin-top: 1.2rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        & > .group-right {
+          float: right;
+          width: 50%;
+          padding: 0;
+          margin-top: 4.2rem;
+          & > .block-region-right {
+            & > .block-views-blockfeatured-news-block-1 {
+              position: unset;
+              .view-id-featured_news {
+                & > .view-content {
+                  .views-row.clearfix.row-1 {
+                    & > .views-col.col-1, & > .views-col.col-2 {
+                      width: 46.7% !important;
+                      & > .views-field-field-news-image {
+                        .image-style-large {
+                          width: 100%;
+                          height: 22rem;
+                        }
+                      }
+                    }
+                    & > .views-col.col-1 {
+                      float: left;
+                      padding-left: 1.2%;
+                    }
+                    & > .views-col.col-2 {
+                      float: right;
+                      margin-right: 4%;
+                      padding-right: 1.2%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,12 +9,6 @@
   #slick-views-slideshow-block-1-1-slider {
     margin: 0;
   }
-  &:hover {
-    .slick__arrow {
-      opacity: 0.7;
-    }
-
-  }
   .slide__media {
     .gradient {
       top: 0;
@@ -43,7 +37,7 @@
     }
     .SlideTitle {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 2rem;
       position: absolute;
       bottom: 16%;
@@ -51,15 +45,11 @@
     }
     .SlideInfo {
       display: none;
-      color: white;
-      font-size: 0.97rem;
-      padding-top: 2.2rem;
-      line-height: 24px;
     }
   }
   .slick__arrow {
     top: 48%;
-    opacity: 0;
+    opacity: 0.7;
     &:hover{
       opacity: 1;
     }
@@ -73,7 +63,7 @@
     button:last-child {
       width: 55px;
       height: 55px;
-      right: 1.8rem;
+      right: 1rem;
       background-image: url("../images/next_icon.png");
     }
     .slick-arrow {
@@ -153,8 +143,17 @@
         height: 1240px;
       }
     }
+    &:hover {
+      .slick__arrow {
+        opacity: 0.7;
+      }
+    }
     .slick__arrow {
-      top: 47%;
+      top: 48%;
+      opacity: 0;
+      &:hover{
+        opacity: 1;
+      }
     }
     .slick-dots {
       bottom: 42.5%;

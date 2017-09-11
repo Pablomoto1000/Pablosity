@@ -1,0 +1,119 @@
+// Mobile Code (Mobile First Approach)
+
+.contact-message-need-more-info-form {
+  width: 100%;
+  float: left;
+  padding: 35px 50px 35px;
+  background: #87888e;
+  #contact-message-need-more-info-form {
+    .ds-3col-equal.clearfix {
+      & > .group-left, & > .group-middle, & > .group-right {
+        float: left;
+        width: 50%;
+        & > div > div {
+          & > label {
+            display: none;
+          }
+          input {
+            width: 98%;
+            float: left;
+            padding: 10px;
+            margin: 0;
+            height: 30px;
+          }
+        }
+      }
+      & > .group-left {
+
+      }
+      & > .group-middle {
+
+      }
+      & > .group-right {
+
+      }
+    }
+  }
+  #edit-actions {
+    #edit-preview {
+      display: none;
+    }
+    #edit-submit {
+      width: 50%;
+      float: right;
+      margin-top: -3rem;
+      font-size: 15px;
+      color: white;
+      background: #87888e;
+      height: 30px;
+      border: 3px solid #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+// Desktop Breakpoint
+@media all and (min-width: 1025px) {
+  .contact-message-need-more-info-form {
+    width: 87.08333%;
+    float: right;
+    padding: 82px 50px 82px;
+    #contact-message-need-more-info-form {
+      .ds-3col-equal.clearfix {
+        & > .group-left, & > .group-middle, & > .group-right {
+          float: unset;
+          width: unset;
+          & > div > div {
+            & > label {
+              display: none;
+            }
+            input {
+              width: 15%;
+              float: left;
+              font-size: 11px;
+              margin: 0 8px 0 0;
+              color: #83969f;
+              height: 60px;
+              padding: 1.5em;
+              border-radius: 2px;
+              box-shadow: none;
+              font-family: 'Montserrat',sans-serif;
+              font-weight: 400;
+              line-height: 1.25rem;
+              background-color: white;
+              border: solid 1px #d5d5d5;
+            }
+            #edit-field-email-0-value {
+              width: 22.91667%;
+              margin: 0 0.83333% 0 0;
+              font-size: 11px;
+            }
+          }
+        }
+        & > .group-left {
+
+        }
+        & > .group-middle {
+
+        }
+        & > .group-right {
+
+        }
+      }
+    }
+    #edit-actions {
+      #edit-preview {
+        display: none;
+      }
+      #edit-submit {
+        width: 11.66667%;
+        margin: -4.5rem 0.83333% 0 0;
+        font-size: 15px;
+        border: 3px solid #fff;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 400;
+        height: 60px;
+      }
+    }
+  }
+}

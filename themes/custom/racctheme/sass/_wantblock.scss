@@ -22,7 +22,7 @@
     .item-list ul {
       margin: 0;
     }
-    .item-list li {
+    .pop-list > li {
       margin: 0;
       width: 100%;
       height: 5.26rem;
@@ -31,7 +31,7 @@
       font-weight: 300;
       font-size: 1.5rem;
       cursor: pointer;
-      a {
+      .filter-tab > a {
         color: white;
         text-decoration: none;
         width: 100%;
@@ -80,11 +80,10 @@
       width: 100%;
       color: black;
       .group-header {
-        padding-bottom: 3rem;
         .gradient {
           top: 0;
           position: absolute;
-          height: 24.30rem;
+          height: 200px;
           width: 100%;
           background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
         }
@@ -96,38 +95,54 @@
         }
         .image-style-wantblockimages {
           width: 100%;
-          height: 24.30rem;
+          height: 200px;
         }
       }
-      .group-left {
-        padding-left: 3rem;
-        padding-right: 3rem;
-      }
-      h2 {
+      .group-left, .group-right {
+        text-align: left;
         width: 100%;
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 2.5rem;
-      }
-      a {
-        color: red;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      p {
-        margin: 0;
-        padding-top: 2rem;
-        font-size: 0.75rem
-      }
-      ul {
-        margin: 0;
-        padding-top: 2rem;
-        font-size: 0.75rem;
-        li {
-          margin: 0;
-          padding-bottom: 0.5rem;
+        float: unset;
+        padding: 2rem 2rem 0 2rem;
+        .field__item {
+          & > h2 {
+            width: 100%;
+            font-size: 1.5625rem;
+            font-family: 'Raleway',sans-serif;
+            font-weight: 100;
+            text-transform: uppercase;
+            color: #3a4d69;
+          }
+          & > ul {
+            margin: 0;
+            padding-top: 2rem;
+            & > li {
+              margin: 0 0 18px 0;
+              font-size: 17px;
+              & > a {
+                font-size: 17px;
+              }
+            }
+          }
+          a {
+            color: #ff3333;
+            text-decoration: none;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 400;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          & > p {
+            margin: 0;
+            padding-top: 2rem;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 400;
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            letter-spacing: 0.7px;
+            margin-bottom: 1.25rem;
+            color: #95a5ac;
+          }
         }
       }
     }
@@ -140,11 +155,6 @@
 
 // Desktop Breakpoint
 @media all and (min-width: 1030px) {
-  .ds-2col-stacked-fluid:first-of-type {
-    .group-header {
-      padding-bottom: 29rem;
-    }
-  }
   .fa.fa-chevron-down {
     display: none;
   }
@@ -160,6 +170,8 @@
   display: inline-flex;
   width: 73.4%;
   font-family: 'Raleway';
+  height: 48.6rem;
+  overflow: hidden;
   .view-filters {
     width: 31%;
     background: transparent;
@@ -180,29 +192,16 @@
       text-align: center;
       font-weight: 300;
       font-size: 2.17rem;
-      cursor: pointer;
       padding-top: 5rem;
-
-      a {
-        color: white;
-        text-decoration: none;
-        padding: 19% 15%;
-        line-height: unset;
-        display: inline;
-      }
-      #\33 {
-        padding: 16% 21%;
-        margin: 0 -21% 0 -21%;
+      cursor: pointer;
+      .filter-tab > a {
+        line-height: normal;
       }
     }
-    .pop-list li a.active {
-      background-color: #0071b3;
-    }
-
     // #edit-actions {input{display: none;}}
     #b1 {background-color: #88898e;}
     #b2 {background-color: #9a9ba0;}
-    #b3 {background-color: #B0B0B0;padding-top: 3.9rem;}
+    #b3 {background-color: #B0B0B0;padding-top: 4rem;}
     #b4 {background-color: #C8C8C8;}
     #b1, #b2, #b3, #b4 {&:hover {background-color: #ff3333;}}
 
@@ -212,55 +211,63 @@
     .grid__content {
       width: 100%;
       color: black;
-      .group-header {
-        padding-bottom: 3rem;
-        .gradient {
-          top: 0;
-          position: absolute;
-          height: 24.30rem;
+      .node--type-wantcontent {
+        & > .group-header {
+          padding-bottom: 3rem;
+          .gradient {
+            top: 0;
+            position: absolute;
+            height: 24.30rem;
+            width: 100%;
+            background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
+          }
+          #wantblockimageoff {
+            display: none;
+          }
+          #wantblockimage {
+            display: block;
+          }
+          .image-style-wantblockimages {
+            width: 100%;
+            height: 24.30rem;
+          }
+        }
+        & > .group-right {
+          width: 50%;
+          float: right;
+          padding: 0;
+        }
+        & > .group-left {
+          float: left;
+          width: 50%;
+          padding: 0 3rem 0 3rem;
+        }
+        h2 {
           width: 100%;
-          background-image: linear-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4));
+          font-size: 2rem;
+          font-weight: 300;
+          line-height: 2.5rem;
         }
-        #wantblockimageoff {
-          display: none;
+        a {
+          color: red;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
-        #wantblockimage {
-          display: block;
-        }
-        .image-style-wantblockimages {
-          width: 100%;
-          height: 24.30rem;
-        }
-      }
-      .group-left {
-        padding-left: 3rem;
-        padding-right: 3rem;
-      }
-      h2 {
-        width: 100%;
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 2.5rem;
-      }
-      a {
-        color: red;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      p {
-        margin: 0;
-        padding-top: 2rem;
-        font-size: 1.1rem;
-      }
-      ul {
-        margin: 0;
-        padding-top: 2rem;
-        font-size: 1.1rem;
-        li {
+        p {
           margin: 0;
-          padding-bottom: 0.5rem;
+          padding-top: 2rem;
+          font-size: 1.1rem;
+        }
+        ul {
+          margin: 0;
+          padding-top: 2rem;
+          font-size: 1.1rem;
+          li {
+            margin: 0;
+            padding-bottom: 0.5rem;
+          }
         }
       }
     }

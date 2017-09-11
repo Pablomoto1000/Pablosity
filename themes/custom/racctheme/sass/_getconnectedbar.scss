@@ -1,0 +1,198 @@
+  // Mobile Code (Mobile First Approach)
+.block-views-blockget-connected-block-1 {
+  margin-top: 2rem;
+  .view-id-get_connected {
+    & > .view-content {
+      & > .cols-4.clearfix {
+        & > .clearfix.row-1, & > .clearfix.row-2 {
+          & > .views-col.col-1, & > .views-col.col-2, & > .views-col.col-3, & > .views-col.col-4 {
+            width: 100vw !important;
+            height: 100vw;
+            position: relative;
+            background: #F0F0F0;
+            & > .views-field-field-image {
+              & > .field-content {
+                & > .image-style-get-connected {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+            & > .views-field-body {
+              & > .field-content {
+                margin: 27% auto;
+                width: 84%;
+                & > h2 {
+                  color: white;
+                  font-family: 'Raleway',sans-serif;
+                  font-weight: 400;
+                  font-size: 2.43rem;
+                  line-height: 50px;
+                  width: 90%;
+                  margin: 0;
+                }
+                & > p {
+                  position: relative;
+                  font-size: 0.875rem;
+                  line-height: 2;
+                  font-family: 'Open Sans',sans-serif;
+                  font-weight: 400;
+                  letter-spacing: 0.7px;
+                  margin: 0px;
+                  margin-bottom: 1.25rem;
+                  color: #646e82;
+                  & > span > a {
+                    font-family: 'Open Sans',sans-serif;
+                    font-weight: 100;
+                    color: #ff3333;
+                    text-decoration: none;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+            & > .views-field-field-social.socialicons {
+              & > .field-content {
+                & > .item-list {
+                  position: absolute;
+                  width: 80%;
+                  bottom: 10%;
+                  li  {
+                    width: 33.33333%;
+                    margin: 1rem 0 0 0;
+                    text-align: center;
+                    float: left;
+                    & > a {
+                      width: 40px;
+                      height: 40px;
+                      margin: 0;
+                      padding: 0;
+                      border-radius: 50%;
+                      background: white;
+                      color: transparent;
+                      font-size: 25px;
+                      letter-spacing: 20px;
+                      color: transparent;
+                      padding: 0.5rem;
+                      text-decoration: none;
+                      &::before {
+                        color: #ff3333;
+                      }
+                      &:hover {
+                        background: #EEEEEE;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            & > .views-field-field-contact {
+              position: absolute;
+              bottom: 1rem;
+              width: 100%;
+              text-align: center;
+              & > .field-content {
+                font-family: 'Open Sans',sans-serif;
+                font-weight: 700;
+              }
+              & > #twtext {
+                color: #ff3333;
+              }
+              &> #insttext{
+                color: white;
+              }
+            }
+            & > .views-field-field-additional-info {
+              & > .fa.fa-twitter {
+                color: transparent;
+                position: absolute;
+                bottom: 0.9rem;
+                left: 1rem;
+                &::before {
+                  font-size: 28px;
+                  color: #ff3333;
+                }
+              }
+              & > .fa.fa-instagram {
+                color: transparent;
+                position: absolute;
+                bottom: 0.9rem;
+                left: 1rem;
+                &::before {
+                  font-size: 28px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        & > .clearfix.row-1 {
+          & > .views-col.col-1 {
+            padding: 38px;
+            background: #ff3333;
+            & > .views-field-body {
+              & > .field-content {
+                margin: -0.5rem 0 0 0;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Tablet Breakpoint
+@media all and (min-width: 960px) and (max-width:1279px) {
+  .block-views-blockget-connected-block-1 {
+    .view-id-get_connected {
+      & > .view-content {
+        & > .cols-4.clearfix {
+          & > .clearfix.row-1, & > .clearfix.row-2 {
+            & > .views-col.col-1, & > .views-col.col-2, & > .views-col.col-3, & > .views-col.col-4 {
+              width: 50% !important;
+              height: 50vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop Breakpoint
+@media all and (min-width: 1280px) {
+  .block-views-blockget-connected-block-1 {
+    .view-id-get_connected {
+      & > .view-content {
+        & > .cols-4.clearfix {
+          & > .clearfix.row-1, & > .clearfix.row-2 {
+            & > .views-col.col-1, & > .views-col.col-2, & > .views-col.col-3, & > .views-col.col-4 {
+              width: 25% !important;
+              height: 25vw;
+              & > .views-field-body {
+                & > .field-content {
+                  margin: 40% auto;
+                }
+              }
+            }
+          }
+          & > .clearfix.row-1 {
+            & > .views-col.col-1 {
+              padding: 38px;
+              background: #ff3333;
+              & > .views-field-body {
+                & > .field-content {
+                  margin: -0.5rem 0 0 0;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
