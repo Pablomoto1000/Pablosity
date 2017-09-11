@@ -1,0 +1,18 @@
+uuid: 0887cb96-967e-4788-9a92-56554668e415
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.current_posting
+id: node.current_posting.title
+field_name: title
+entity_type: node
+bundle: current_posting
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

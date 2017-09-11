@@ -294,6 +294,11 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      link_url: /news
+      link_display: '0'
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,8 @@
+uuid: 69866b0d-bb17-421b-b176-2727592d9aa4
+langcode: en
+status: true
+dependencies: {  }
+id: responsive_footer_buttons
+label: 'Responsive Footer Buttons'
+revision: 0
+description: ''

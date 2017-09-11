@@ -24,3 +24,4 @@ hidden:
   field_college_solicitor_kozloff_: true
   field_emeritustrustee: true
   field_racc_board_of_trustees: true
+  langcode: true

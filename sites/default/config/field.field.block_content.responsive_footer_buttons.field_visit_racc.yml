@@ -1,0 +1,28 @@
+uuid: f65b12d3-3c4b-4a97-9e93-e52bcfdf18f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.responsive_footer_buttons
+    - field.storage.block_content.field_visit_racc
+  module:
+    - link
+id: block_content.responsive_footer_buttons.field_visit_racc
+field_name: field_visit_racc
+entity_type: block_content
+bundle: responsive_footer_buttons
+label: 'Visit Racc'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.racc.edu/about-racc/campus-map-and-directions'
+    title: 'Visit Racc'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

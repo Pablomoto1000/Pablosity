@@ -1,0 +1,16 @@
+uuid: e527e90a-e442-42ed-a81a-e58b62a9335d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job_details
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.work_study_job_details
+target_entity_type_id: node
+target_bundle: work_study_job_details
+default_langcode: site_default
+language_alterable: false

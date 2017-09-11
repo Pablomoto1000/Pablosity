@@ -1,0 +1,18 @@
+uuid: 770df7e5-604f-443a-95ec-f8589e17e3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.videoembed
+id: node.videoembed.title
+field_name: title
+entity_type: node
+bundle: videoembed
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

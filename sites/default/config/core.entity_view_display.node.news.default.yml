@@ -8,11 +8,12 @@ dependencies:
     - field.field.node.news.field_news_image
     - field.field.node.news.field_newsdate
     - field.field.node.news.field_newstax
-    - image.style.bannerracc
     - node.type.news
+    - responsive_image.styles.featured_news
   module:
     - datetime
-    - image
+    - fences
+    - responsive_image
     - text
     - user
 id: node.news.default
@@ -31,18 +32,32 @@ content:
     weight: 1
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      link_to_entity: true
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
     type: string
     region: content
   field_news_image:
     weight: 0
     label: hidden
     settings:
-      image_style: bannerracc
-      image_link: ''
-    third_party_settings: {  }
-    type: image
+      responsive_image_style: featured_news
+      image_link: content
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: responsive_image
     region: content
   field_newsdate:
     weight: 2
@@ -66,4 +81,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: e79068da-0fc2-4fc0-995c-8cfa51355218
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_opportunities
+id: node.career_opportunities.promote
+field_name: promote
+entity_type: node
+bundle: career_opportunities
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,16 @@
+uuid: 14baddd4-6900-4883-8db8-6470f6a8b0ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bannerracc
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: block_content.bannerracc
+target_entity_type_id: block_content
+target_bundle: bannerracc
+default_langcode: site_default
+language_alterable: false

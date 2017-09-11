@@ -1,0 +1,22 @@
+uuid: 8d235e90-cb06-4680-9443-1983673f25af
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jon_description
+id: node.jon_description.status
+field_name: status
+entity_type: node
+bundle: jon_description
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

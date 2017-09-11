@@ -1,0 +1,16 @@
+uuid: 4fcb909e-ee9c-4adb-a0e3-0bb596a29758
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node._faculty_and_staff_directory
+target_entity_type_id: node
+target_bundle: _faculty_and_staff_directory
+default_langcode: site_default
+language_alterable: false

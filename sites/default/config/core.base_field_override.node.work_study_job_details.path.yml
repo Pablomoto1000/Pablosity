@@ -1,0 +1,20 @@
+uuid: 2726e841-a252-4860-9987-232a58b8737c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job_details
+  module:
+    - path
+id: node.work_study_job_details.path
+field_name: path
+entity_type: node
+bundle: work_study_job_details
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

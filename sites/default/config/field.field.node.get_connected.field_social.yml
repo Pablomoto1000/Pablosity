@@ -1,0 +1,23 @@
+uuid: 58a7f36c-0d9d-41d0-96b9-bd49175adca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social
+    - node.type.get_connected
+  module:
+    - link
+id: node.get_connected.field_social
+field_name: field_social
+entity_type: node
+bundle: get_connected
+label: Social
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

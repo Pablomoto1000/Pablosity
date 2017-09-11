@@ -1,0 +1,18 @@
+uuid: a5850f26-90dd-4ab1-83c6-7df9539c7d38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jon_description
+id: node.jon_description.created
+field_name: created
+entity_type: node
+bundle: jon_description
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

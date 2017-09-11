@@ -53,6 +53,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: left
+  langcode:
+    type: language_select
+    weight: 2
+    region: left
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   copy: true
   mail: true

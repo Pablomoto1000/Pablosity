@@ -1,0 +1,20 @@
+uuid: 838f57f5-f852-4630-8096-6484f912a851
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_of_trustees
+id: node.board_of_trustees.uid
+field_name: uid
+entity_type: node
+bundle: board_of_trustees
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 43ef6be7-fcf0-453c-aa5b-258a4b566bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.admissions
+id: node.admissions.created
+field_name: created
+entity_type: node
+bundle: admissions
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

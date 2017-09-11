@@ -1,0 +1,16 @@
+uuid: 289bfca4-19de-4a57-a7a2-262103a3a8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.responsive_footer_buttons
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: block_content.responsive_footer_buttons
+target_entity_type_id: block_content
+target_bundle: responsive_footer_buttons
+default_langcode: site_default
+language_alterable: false

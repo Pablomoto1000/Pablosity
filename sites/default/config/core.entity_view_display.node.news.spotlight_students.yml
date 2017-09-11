@@ -13,6 +13,7 @@ dependencies:
     - node.type.news
   module:
     - ds
+    - fences
     - image
     - text
     - user
@@ -47,6 +48,10 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
 id: node.news.spotlight_students
 targetEntityType: node
 bundle: news
@@ -63,8 +68,15 @@ content:
     weight: 3
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      link_to_entity: true
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
     type: string
     region: right
   field_news_image:
@@ -72,8 +84,15 @@ content:
     label: hidden
     settings:
       image_style: large
-      image_link: ''
-    third_party_settings: {  }
+      image_link: content
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
     type: image
     region: left
   links:
@@ -84,3 +103,4 @@ content:
 hidden:
   field_newsdate: true
   field_newstax: true
+  langcode: true

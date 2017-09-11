@@ -1,0 +1,18 @@
+uuid: b4bd626b-d75d-48a7-b5b3-0ec3169bb3f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+id: node._annual_fund.title
+field_name: title
+entity_type: node
+bundle: _annual_fund
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: 39af8958-88e9-4659-a512-fd047c1e2c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: block_content.about_racc_block
+target_entity_type_id: block_content
+target_bundle: about_racc_block
+default_langcode: site_default
+language_alterable: false

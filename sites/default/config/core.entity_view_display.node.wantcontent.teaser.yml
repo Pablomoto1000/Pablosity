@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.wantcontent.field_historyabout
     - field.field.node.wantcontent.field_image
+    - field.field.node.wantcontent.field_missionaboutracc
     - node.type.wantcontent
   module:
     - user
@@ -17,4 +19,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_historyabout: true
   field_image: true
+  field_missionaboutracc: true
+  langcode: true

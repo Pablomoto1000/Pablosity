@@ -11,7 +11,13 @@ dependencies:
     - field.field.node._faculty_and_staff_directory.field_room
     - node.type._faculty_and_staff_directory
   module:
+    - field_layout
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node._faculty_and_staff_directory.default
 targetEntityType: node
 bundle: _faculty_and_staff_directory
@@ -69,6 +75,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 3

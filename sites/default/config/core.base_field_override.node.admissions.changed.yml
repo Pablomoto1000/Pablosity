@@ -1,0 +1,18 @@
+uuid: b0af6444-2c13-4a6b-9846-f5fc622a381e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.admissions
+id: node.admissions.changed
+field_name: changed
+entity_type: node
+bundle: admissions
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

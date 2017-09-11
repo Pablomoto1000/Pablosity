@@ -1,0 +1,20 @@
+uuid: ac5e5a96-85aa-43ed-960a-f11e82b522a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.uid
+field_name: uid
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 85d171fa-9a9f-491f-bbc5-86ed53f5d1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.admissions
+id: node.admissions.title
+field_name: title
+entity_type: node
+bundle: admissions
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

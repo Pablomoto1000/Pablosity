@@ -1,0 +1,18 @@
+uuid: 4a4acc15-21c1-435d-8ad7-bcc8c5d4f5ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_opportunities
+id: taxonomy_term.career_opportunities.name
+field_name: name
+entity_type: taxonomy_term
+bundle: career_opportunities
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 3e340df2-db2e-4539-ac91-29de8c135222
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_connected
+id: node.get_connected.title
+field_name: title
+entity_type: node
+bundle: get_connected
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

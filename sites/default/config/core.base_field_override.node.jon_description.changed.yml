@@ -1,0 +1,18 @@
+uuid: f9e48597-4eb2-4e13-971f-f88a2de898e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jon_description
+id: node.jon_description.changed
+field_name: changed
+entity_type: node
+bundle: jon_description
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

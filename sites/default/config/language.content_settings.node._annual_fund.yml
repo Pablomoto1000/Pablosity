@@ -1,0 +1,16 @@
+uuid: 6801aebd-d03f-4414-baa2-04d634129ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node._annual_fund
+target_entity_type_id: node
+target_bundle: _annual_fund
+default_langcode: site_default
+language_alterable: false

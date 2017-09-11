@@ -1,0 +1,20 @@
+uuid: 5ba33af1-73d7-4bfe-85ac-54c5faefad83
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.uid
+field_name: uid
+entity_type: node
+bundle: racc_about_page
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

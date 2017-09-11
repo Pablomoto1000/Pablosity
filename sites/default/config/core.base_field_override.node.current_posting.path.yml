@@ -1,0 +1,20 @@
+uuid: eeb77476-bd41-40ec-8e44-a99cf84db6ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.current_posting
+  module:
+    - path
+id: node.current_posting.path
+field_name: path
+entity_type: node
+bundle: current_posting
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

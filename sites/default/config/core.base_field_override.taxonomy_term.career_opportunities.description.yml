@@ -1,0 +1,20 @@
+uuid: 544f83c1-c981-4656-ad47-9b139f92eff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_opportunities
+  module:
+    - text
+id: taxonomy_term.career_opportunities.description
+field_name: description
+entity_type: taxonomy_term
+bundle: career_opportunities
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

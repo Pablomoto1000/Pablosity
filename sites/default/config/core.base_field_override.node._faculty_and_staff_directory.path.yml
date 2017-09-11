@@ -1,0 +1,20 @@
+uuid: bad1de9f-5090-4bfb-868d-ab6ee5df07ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+  module:
+    - path
+id: node._faculty_and_staff_directory.path
+field_name: path
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -5,6 +5,13 @@ dependencies:
   config:
     - contact.form.contact_us
     - field.field.contact_message.contact_us.field_name
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us
@@ -23,6 +30,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   mail:
     weight: 2
     region: content

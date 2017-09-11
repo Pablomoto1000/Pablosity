@@ -1,0 +1,102 @@
+uuid: a2560582-0e3d-4155-bf42-8ff6b1fc0878
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.upcoming_even
+    - field.field.node.events.body
+    - field.field.node.events.field_applydate
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_hours
+    - field.field.node.events.field_information_file
+    - field.field.node.events.field_location
+    - field.field.node.events.field_register
+    - field.field.node.events.field_time1
+    - node.type.events
+  module:
+    - ds
+    - fences
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - links
+        - field_applydate
+        - field_hours
+      right:
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.events.upcoming_even
+targetEntityType: node
+bundle: events
+mode: upcoming_even
+content:
+  field_applydate:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: month
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: string
+    region: left
+  field_hours:
+    weight: 2
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: day
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: number_integer
+    region: left
+  links:
+    weight: 0
+    region: left
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_event_date: true
+  field_information_file: true
+  field_location: true
+  field_register: true
+  field_time1: true
+  langcode: true

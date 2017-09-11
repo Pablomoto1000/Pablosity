@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.wantcontent.field_image
     - field.field.node.wantcontent.field_missionaboutracc
     - node.type.wantcontent
+    - responsive_image.styles.want_block
   module:
     - ds
-    - image
+    - fences
+    - responsive_image
     - text
     - user
 third_party_settings:
@@ -55,10 +57,17 @@ content:
     weight: 1
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: want_block
       image_link: ''
-    third_party_settings: {  }
-    type: image
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: responsive_image
     region: header
   field_missionaboutracc:
     weight: 3
@@ -72,4 +81,5 @@ content:
     region: header
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

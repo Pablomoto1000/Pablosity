@@ -1,0 +1,18 @@
+uuid: 0ef96d55-4092-4513-aa6b-0b5f74f0813a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_tags
+id: taxonomy_term.font_tags.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: font_tags
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

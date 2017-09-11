@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - contact.form.contact_us
+    - contact.form.need_more_info
     - page_manager.page.homepage
     - views.view.featured_news
     - views.view.get_connected
@@ -28,7 +28,7 @@ variant_settings:
       id: 'views_block:featured_news-block_1'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       context_mapping: {  }
@@ -37,10 +37,10 @@ variant_settings:
       weight: 1
     04e92e49-0e81-46b6-93f3-bd3789183f6c:
       id: 'views_block:spotlight_students-block_1'
-      label: ''
+      label: 'Featured News'
       provider: views
       label_display: visible
-      views_label: ''
+      views_label: 'Featured News'
       items_per_page: none
       context_mapping: {  }
       region: left
@@ -61,7 +61,7 @@ variant_settings:
       id: 'views_block:get_connected-block_1'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       context_mapping: {  }
@@ -73,7 +73,7 @@ variant_settings:
       label: 'Contact block'
       provider: contact_block
       label_display: '0'
-      contact_form: contact_us
+      contact_form: need_more_info
       context_mapping: {  }
       region: footer
       uuid: 460f9abc-6709-4aa3-824e-f9f694dddfcc

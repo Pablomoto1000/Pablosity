@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.get_connected.field_additional_info
     - field.field.node.get_connected.field_contact
     - field.field.node.get_connected.field_image
+    - field.field.node.get_connected.field_social
     - node.type.get_connected
   module:
     - ds
@@ -82,4 +83,6 @@ content:
     region: ds_content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_social: true
+  langcode: true

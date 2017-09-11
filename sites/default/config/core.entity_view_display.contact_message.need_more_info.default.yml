@@ -65,4 +65,5 @@ content:
     type: string
     region: left
 hidden:
+  langcode: true
   message: true

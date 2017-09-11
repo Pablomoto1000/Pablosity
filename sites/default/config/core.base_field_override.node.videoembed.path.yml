@@ -1,0 +1,20 @@
+uuid: ddaae97c-2171-4c52-99dc-302402f72dea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.videoembed
+  module:
+    - path
+id: node.videoembed.path
+field_name: path
+entity_type: node
+bundle: videoembed
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

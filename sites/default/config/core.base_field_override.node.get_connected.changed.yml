@@ -1,0 +1,18 @@
+uuid: c2ff6c78-c1d3-413e-a34d-43b7e68dabb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_connected
+id: node.get_connected.changed
+field_name: changed
+entity_type: node
+bundle: get_connected
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

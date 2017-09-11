@@ -1,0 +1,16 @@
+uuid: b3dfc962-4ef1-41cc-93e1-09e08b20e945
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_connected
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.get_connected
+target_entity_type_id: node
+target_bundle: get_connected
+default_langcode: site_default
+language_alterable: false

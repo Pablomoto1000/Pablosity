@@ -9,7 +9,7 @@ _core:
 id: racctheme_local_tasks
 theme: racctheme
 region: content
-weight: -11
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:

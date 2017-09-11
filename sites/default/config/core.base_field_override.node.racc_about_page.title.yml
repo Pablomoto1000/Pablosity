@@ -1,0 +1,18 @@
+uuid: 51ce476f-0caa-4a1e-be2f-01d629c154c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.title
+field_name: title
+entity_type: node
+bundle: racc_about_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

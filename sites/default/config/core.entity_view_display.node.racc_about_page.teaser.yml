@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.racc_about_page.body
+    - field.field.node.racc_about_page.field_historyabout
+    - field.field.node.racc_about_page.field_image
+    - field.field.node.racc_about_page.field_missionaboutracc
+    - field.field.node.racc_about_page.field_visionaboutracc
     - node.type.racc_about_page
   module:
     - text
@@ -25,4 +29,9 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_historyabout: true
+  field_image: true
+  field_missionaboutracc: true
+  field_visionaboutracc: true
+  langcode: true

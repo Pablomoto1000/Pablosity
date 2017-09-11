@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_logofooterblock
 theme: racctheme
 region: footer
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:bc8868e8-9499-4d39-bc39-981200a6e35f'
 settings:

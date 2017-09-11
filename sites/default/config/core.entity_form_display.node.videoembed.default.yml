@@ -6,8 +6,14 @@ dependencies:
     - field.field.node.videoembed.field_videoembed
     - node.type.videoembed
   module:
+    - field_layout
+    - layout_discovery
     - path
     - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.videoembed.default
 targetEntityType: node
 bundle: videoembed
@@ -25,6 +31,12 @@ content:
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

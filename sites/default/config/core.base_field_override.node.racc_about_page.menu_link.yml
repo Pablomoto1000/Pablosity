@@ -1,0 +1,20 @@
+uuid: 4f32e8e6-77c8-4684-82ab-ab3d3dd93ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.menu_link
+field_name: menu_link
+entity_type: node
+bundle: racc_about_page
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -12,7 +12,7 @@ bundle: work_study_job_details
 label: Department
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

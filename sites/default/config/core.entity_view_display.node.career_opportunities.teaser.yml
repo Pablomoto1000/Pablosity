@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.career_opportunities.body
+    - field.field.node.career_opportunities.field_career_opportunities_listi
+    - field.field.node.career_opportunities.field_divers
     - node.type.career_opportunities
   module:
     - text
@@ -25,4 +27,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_career_opportunities_listi: true
+  field_divers: true
+  langcode: true

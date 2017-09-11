@@ -74,4 +74,5 @@ content:
     third_party_settings: {  }
     type: text_default
     region: middle
-hidden: {  }
+hidden:
+  langcode: true

@@ -9,7 +9,13 @@ dependencies:
     - field.field.node.board_of_trustees.field_racc_board_of_trustees
     - node.type.board_of_trustees
   module:
+    - field_layout
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.board_of_trustees.default
 targetEntityType: node
 bundle: board_of_trustees
@@ -47,6 +53,12 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 5

@@ -1,0 +1,52 @@
+uuid: cbbbc2dd-62a6-4263-9fcb-bf19406aa9e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_650x650
+  theme:
+    - racctheme
+id: featured_news
+label: 'Featured News'
+image_style_mappings:
+  -
+    breakpoint_id: racc.homepageWide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - large
+        - max_2600x2600
+  -
+    breakpoint_id: racc.wide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+  -
+    breakpoint_id: racc.narrow
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+  -
+    breakpoint_id: racc.mobile
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - large
+        - max_650x650
+breakpoint_group: racctheme
+fallback_image_style: large

@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_policies
 theme: racctheme
 region: footer
-weight: -12
+weight: -13
 provider: null
 plugin: 'system_menu_block:third-column-footer'
 settings:

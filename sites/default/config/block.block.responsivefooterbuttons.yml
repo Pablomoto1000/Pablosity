@@ -1,0 +1,25 @@
+uuid: eea81e2d-fb7f-429f-9c51-496f68178c16
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:responsive_footer_buttons:8a026f34-81ea-4f98-b3db-8c8d6c708dab'
+  module:
+    - block_content
+  theme:
+    - racctheme
+id: responsivefooterbuttons
+theme: racctheme
+region: footer
+weight: -15
+provider: null
+plugin: 'block_content:8a026f34-81ea-4f98-b3db-8c8d6c708dab'
+settings:
+  id: 'block_content:8a026f34-81ea-4f98-b3db-8c8d6c708dab'
+  label: 'Responsive Footer Buttons '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

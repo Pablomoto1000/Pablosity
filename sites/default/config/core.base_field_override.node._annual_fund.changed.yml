@@ -1,0 +1,18 @@
+uuid: 08927c5d-dfb7-4680-aa08-f52966aab3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+id: node._annual_fund.changed
+field_name: changed
+entity_type: node
+bundle: _annual_fund
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

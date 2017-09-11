@@ -16,9 +16,15 @@ dependencies:
     - field.field.node.jon_description.field_title_
     - node.type.jon_description
   module:
+    - field_layout
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.jon_description.default
 targetEntityType: node
 bundle: jon_description
@@ -110,6 +116,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 12

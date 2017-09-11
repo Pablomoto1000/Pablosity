@@ -1,0 +1,18 @@
+uuid: a30cd1fc-c4e1-47a4-adb1-647656ed2ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+id: block_content.about_racc_block.changed
+field_name: changed
+entity_type: block_content
+bundle: about_racc_block
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

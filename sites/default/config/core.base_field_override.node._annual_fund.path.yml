@@ -1,0 +1,20 @@
+uuid: 7bd5284b-b777-4176-8206-3dfceb64285f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+  module:
+    - path
+id: node._annual_fund.path
+field_name: path
+entity_type: node
+bundle: _annual_fund
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

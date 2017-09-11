@@ -9,8 +9,14 @@ dependencies:
     - field.field.node.admissions.field_student_data
     - node.type.admissions
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.admissions.default
 targetEntityType: node
 bundle: admissions
@@ -49,6 +55,12 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 5

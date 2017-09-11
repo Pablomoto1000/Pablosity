@@ -169,6 +169,11 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: /news
+      link_display: custom_url
+      use_more: true
+      use_more_always: true
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:

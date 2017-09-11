@@ -1,0 +1,22 @@
+uuid: 63d939ec-d094-44e0-b0e5-faf2298ae3b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_of_trustees
+id: node.board_of_trustees.status
+field_name: status
+entity_type: node
+bundle: board_of_trustees
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

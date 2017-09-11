@@ -1,0 +1,28 @@
+uuid: 32f82f00-4c3d-44c6-9102-f90e66e98a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.responsive_footer_buttons
+    - field.storage.block_content.field_donate
+  module:
+    - link
+id: block_content.responsive_footer_buttons.field_donate
+field_name: field_donate
+entity_type: block_content
+bundle: responsive_footer_buttons
+label: Donate
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.racc.edu/about-racc/donate'
+    title: Donate
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

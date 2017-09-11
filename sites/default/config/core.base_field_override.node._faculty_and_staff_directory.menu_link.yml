@@ -1,0 +1,20 @@
+uuid: d1860ace-43c8-44dc-ba4e-31ad41ed3ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.menu_link
+field_name: menu_link
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

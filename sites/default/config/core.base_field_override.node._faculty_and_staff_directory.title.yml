@@ -1,0 +1,18 @@
+uuid: 12c4f440-54ef-446d-81f5-2c5966c4b82f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.title
+field_name: title
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

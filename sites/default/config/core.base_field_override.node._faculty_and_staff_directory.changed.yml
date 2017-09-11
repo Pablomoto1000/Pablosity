@@ -1,0 +1,18 @@
+uuid: 478e1240-d0dc-49bc-8043-78194e09979d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._faculty_and_staff_directory
+id: node._faculty_and_staff_directory.changed
+field_name: changed
+entity_type: node
+bundle: _faculty_and_staff_directory
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

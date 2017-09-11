@@ -55,3 +55,4 @@ content:
 hidden:
   field_description: true
   field_newstax: true
+  langcode: true

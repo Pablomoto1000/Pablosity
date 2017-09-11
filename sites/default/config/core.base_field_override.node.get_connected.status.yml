@@ -1,0 +1,22 @@
+uuid: 030430a1-aaa9-4fc6-a910-61c713103651
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_connected
+id: node.get_connected.status
+field_name: status
+entity_type: node
+bundle: get_connected
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

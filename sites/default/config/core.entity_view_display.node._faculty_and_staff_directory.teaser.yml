@@ -28,3 +28,4 @@ hidden:
   field_name: true
   field_phone_ext_: true
   field_room: true
+  langcode: true

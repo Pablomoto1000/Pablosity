@@ -50,4 +50,5 @@ content:
         fences_label_classes: ''
     type: image
     region: ds_content
-hidden: {  }
+hidden:
+  langcode: true

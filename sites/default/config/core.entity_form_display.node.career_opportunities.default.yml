@@ -8,8 +8,14 @@ dependencies:
     - field.field.node.career_opportunities.field_divers
     - node.type.career_opportunities
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.career_opportunities.default
 targetEntityType: node
 bundle: career_opportunities
@@ -40,6 +46,12 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 6

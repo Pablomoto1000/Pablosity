@@ -1,0 +1,20 @@
+uuid: ff99a664-aa79-48bb-b65b-f0c958ec8e09
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.admissions
+  module:
+    - path
+id: node.admissions.path
+field_name: path
+entity_type: node
+bundle: admissions
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

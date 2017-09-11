@@ -1,0 +1,18 @@
+uuid: ae9b6642-b60a-418e-9c6d-363e4af6c5a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.created
+field_name: created
+entity_type: node
+bundle: racc_about_page
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -11,9 +11,15 @@ dependencies:
     - image.style.medium
     - node.type.racc_about_page
   module:
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.racc_about_page.default
 targetEntityType: node
 bundle: racc_about_page
@@ -60,6 +66,12 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 6

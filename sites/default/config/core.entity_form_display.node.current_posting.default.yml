@@ -15,7 +15,13 @@ dependencies:
     - field.field.node.current_posting.field_refund
     - node.type.current_posting
   module:
+    - field_layout
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.current_posting.default
 targetEntityType: node
 bundle: current_posting
@@ -107,6 +113,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 13

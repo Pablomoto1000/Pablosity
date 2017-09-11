@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.jon_description.body
+    - field.field.node.jon_description.field_announce_date_
+    - field.field.node.jon_description.field_applydate
+    - field.field.node.jon_description.field_appstatus
+    - field.field.node.jon_description.field_back_to_career_opportuniti
+    - field.field.node.jon_description.field_describe
+    - field.field.node.jon_description.field_job_details
+    - field.field.node.jon_description.field_postype
+    - field.field.node.jon_description.field_salary
+    - field.field.node.jon_description.field_summary
+    - field.field.node.jon_description.field_title_
     - node.type.jon_description
   module:
     - text
@@ -25,4 +35,15 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_announce_date_: true
+  field_applydate: true
+  field_appstatus: true
+  field_back_to_career_opportuniti: true
+  field_describe: true
+  field_job_details: true
+  field_postype: true
+  field_salary: true
+  field_summary: true
+  field_title_: true
+  langcode: true

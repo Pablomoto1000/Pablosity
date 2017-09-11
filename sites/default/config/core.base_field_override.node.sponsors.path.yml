@@ -1,0 +1,20 @@
+uuid: b233f03e-9b9b-40ca-bd8d-b0785bc1053c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sponsors
+  module:
+    - path
+id: node.sponsors.path
+field_name: path
+entity_type: node
+bundle: sponsors
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

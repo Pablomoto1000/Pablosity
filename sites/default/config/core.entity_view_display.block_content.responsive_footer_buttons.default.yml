@@ -1,0 +1,54 @@
+uuid: 611f665e-394c-4d9d-bb1b-feecf8afa550
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.responsive_footer_buttons
+    - field.field.block_content.responsive_footer_buttons.field_apply
+    - field.field.block_content.responsive_footer_buttons.field_donate
+    - field.field.block_content.responsive_footer_buttons.field_visit_racc
+  module:
+    - link
+id: block_content.responsive_footer_buttons.default
+targetEntityType: block_content
+bundle: responsive_footer_buttons
+mode: default
+content:
+  field_apply:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_donate:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_visit_racc:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

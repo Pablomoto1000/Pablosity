@@ -1,0 +1,16 @@
+uuid: 691d7dcc-1a3f-431d-9a88-2f53cff0cc07
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_opportunities
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.career_opportunities
+target_entity_type_id: taxonomy_term
+target_bundle: career_opportunities
+default_langcode: site_default
+language_alterable: false

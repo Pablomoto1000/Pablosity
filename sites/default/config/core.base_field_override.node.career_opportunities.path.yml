@@ -1,0 +1,20 @@
+uuid: 0a7c6cd3-089e-4d04-9805-5eb0070d6373
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_opportunities
+  module:
+    - path
+id: node.career_opportunities.path
+field_name: path
+entity_type: node
+bundle: career_opportunities
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

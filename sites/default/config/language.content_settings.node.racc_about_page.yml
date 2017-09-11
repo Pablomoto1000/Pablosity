@@ -1,0 +1,16 @@
+uuid: 5021b048-aa12-48d1-a408-16c1012ec3ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.racc_about_page
+target_entity_type_id: node
+target_bundle: racc_about_page
+default_langcode: site_default
+language_alterable: false

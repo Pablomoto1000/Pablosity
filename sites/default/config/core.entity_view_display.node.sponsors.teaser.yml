@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.sponsors.field_sponsor
     - node.type.sponsors
   module:
     - user
@@ -15,4 +16,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_sponsor: true
+  langcode: true

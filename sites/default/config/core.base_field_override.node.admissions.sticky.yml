@@ -1,0 +1,22 @@
+uuid: 57140adf-b0c8-4cc0-b31c-5359fbb3f484
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.admissions
+id: node.admissions.sticky
+field_name: sticky
+entity_type: node
+bundle: admissions
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

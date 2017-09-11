@@ -1,0 +1,18 @@
+uuid: a5c9200c-41e8-4e2d-99f9-615be5e2e451
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_opportunities
+id: node.career_opportunities.changed
+field_name: changed
+entity_type: node
+bundle: career_opportunities
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

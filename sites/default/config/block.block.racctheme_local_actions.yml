@@ -9,7 +9,7 @@ _core:
 id: racctheme_local_actions
 theme: racctheme
 region: content
-weight: -12
+weight: -11
 provider: null
 plugin: local_actions_block
 settings:

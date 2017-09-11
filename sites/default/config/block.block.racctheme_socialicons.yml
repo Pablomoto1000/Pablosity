@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_socialicons
 theme: racctheme
 region: footer
-weight: -8
+weight: -9
 provider: null
 plugin: 'system_menu_block:social-icons'
 settings:

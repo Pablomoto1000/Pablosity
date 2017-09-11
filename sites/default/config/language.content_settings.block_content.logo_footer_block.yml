@@ -1,0 +1,16 @@
+uuid: 6c060e16-86b3-4302-bf8c-1c1656a7fbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_footer_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: block_content.logo_footer_block
+target_entity_type_id: block_content
+target_bundle: logo_footer_block
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,16 @@
+uuid: a76dbd9b-3801-497d-8747-8838c3255e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.news
+target_entity_type_id: taxonomy_term
+target_bundle: news
+default_langcode: site_default
+language_alterable: false

@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_popularlinks
 theme: racctheme
 region: footer
-weight: -11
+weight: -12
 provider: null
 plugin: 'system_menu_block:first-column-footer'
 settings:

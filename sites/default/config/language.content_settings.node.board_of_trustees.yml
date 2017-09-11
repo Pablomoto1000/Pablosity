@@ -1,0 +1,16 @@
+uuid: e0654b07-d7cd-4dc9-b622-c554db5fdda6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_of_trustees
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.board_of_trustees
+target_entity_type_id: node
+target_bundle: board_of_trustees
+default_langcode: site_default
+language_alterable: false

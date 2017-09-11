@@ -1,0 +1,18 @@
+uuid: 83edc88c-8d30-4086-88cc-096483183e4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_racc_block
+id: block_content.about_racc_block.info
+field_name: info
+entity_type: block_content
+bundle: about_racc_block
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

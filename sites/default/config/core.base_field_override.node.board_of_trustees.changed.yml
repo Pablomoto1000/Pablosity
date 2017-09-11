@@ -1,0 +1,18 @@
+uuid: 898b0162-eeb1-4fe1-bc00-4c674ec83dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_of_trustees
+id: node.board_of_trustees.changed
+field_name: changed
+entity_type: node
+bundle: board_of_trustees
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,23 @@
+uuid: e67672ae-ea5e-40c0-8b35-ff51647da1f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hours
+    - node.type.events
+id: node.events.field_hours
+field_name: field_hours
+entity_type: node
+bundle: events
+label: Day
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 31
+  prefix: ''
+  suffix: ''
+field_type: integer

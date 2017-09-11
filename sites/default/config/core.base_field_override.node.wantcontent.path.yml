@@ -1,0 +1,20 @@
+uuid: 3ce12c2b-7853-430d-b8b0-c34b897aa71f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wantcontent
+  module:
+    - path
+id: node.wantcontent.path
+field_name: path
+entity_type: node
+bundle: wantcontent
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

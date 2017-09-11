@@ -1,0 +1,18 @@
+uuid: 4da96036-7419-4b9a-b4b7-62564dcb5747
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.videoembed
+id: node.videoembed.created
+field_name: created
+entity_type: node
+bundle: videoembed
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

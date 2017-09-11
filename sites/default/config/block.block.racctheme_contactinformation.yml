@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_contactinformation
 theme: racctheme
 region: footer
-weight: -10
+weight: -11
 provider: null
 plugin: 'system_menu_block:second-column-footer'
 settings:

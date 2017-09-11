@@ -1,0 +1,20 @@
+uuid: 51754fdd-e59c-49a0-a093-16f87ad11a85
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.videoembed
+id: node.videoembed.uid
+field_name: uid
+entity_type: node
+bundle: videoembed
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

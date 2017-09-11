@@ -1,0 +1,51 @@
+uuid: 69b66290-90a8-4f95-b205-751f68b0935a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_650x650
+    - image.style.wantblockimages
+  theme:
+    - racctheme
+id: want_block
+label: 'Want Block'
+image_style_mappings:
+  -
+    breakpoint_id: racc.homepageWide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - max_2600x2600
+        - wantblockimages
+  -
+    breakpoint_id: racc.wide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - max_1300x1300
+        - wantblockimages
+  -
+    breakpoint_id: racc.narrow
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - wantblockimages
+  -
+    breakpoint_id: racc.mobile
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100%
+      sizes_image_styles:
+        - max_650x650
+        - wantblockimages
+breakpoint_group: racctheme
+fallback_image_style: wantblockimages

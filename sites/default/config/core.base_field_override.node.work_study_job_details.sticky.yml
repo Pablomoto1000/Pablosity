@@ -1,0 +1,22 @@
+uuid: 93828bdb-6654-45a0-b686-065481bdd86f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job_details
+id: node.work_study_job_details.sticky
+field_name: sticky
+entity_type: node
+bundle: work_study_job_details
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

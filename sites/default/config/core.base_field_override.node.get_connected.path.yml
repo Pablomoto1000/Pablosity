@@ -1,0 +1,20 @@
+uuid: 33170eff-c76f-4d5b-afc3-9154eb5cb839
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_connected
+  module:
+    - path
+id: node.get_connected.path
+field_name: path
+entity_type: node
+bundle: get_connected
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

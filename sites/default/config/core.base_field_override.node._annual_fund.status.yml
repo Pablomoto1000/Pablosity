@@ -1,0 +1,22 @@
+uuid: 90db08f6-ddfd-47da-a692-bdcc896c4617
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type._annual_fund
+id: node._annual_fund.status
+field_name: status
+entity_type: node
+bundle: _annual_fund
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.admissions.body
+    - field.field.node.admissions.field_open_admissions
+    - field.field.node.admissions.field_selective_programs
+    - field.field.node.admissions.field_student_data
     - node.type.admissions
   module:
     - text
@@ -25,4 +28,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_open_admissions: true
+  field_selective_programs: true
+  field_student_data: true
+  langcode: true

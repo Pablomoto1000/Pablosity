@@ -5,6 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
+    - field.field.node.events.field_applydate
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_hours
+    - field.field.node.events.field_information_file
+    - field.field.node.events.field_location
+    - field.field.node.events.field_register
+    - field.field.node.events.field_time1
     - node.type.events
   module:
     - text
@@ -25,4 +32,12 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_applydate: true
+  field_event_date: true
+  field_hours: true
+  field_information_file: true
+  field_location: true
+  field_register: true
+  field_time1: true
+  langcode: true

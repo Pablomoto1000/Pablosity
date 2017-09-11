@@ -1,0 +1,22 @@
+uuid: 6e7476c3-49c4-41d3-8f51-3f195d68a254
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.status
+field_name: status
+entity_type: node
+bundle: racc_about_page
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: f9f5fdb4-70f6-467d-a262-c1a48ed176c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job_details
+id: node.work_study_job_details.status
+field_name: status
+entity_type: node
+bundle: work_study_job_details
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

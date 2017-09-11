@@ -1,0 +1,16 @@
+uuid: 225b55d2-a5ca-4792-9d49-d8a8bce7803a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jon_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.jon_description
+target_entity_type_id: node
+target_bundle: jon_description
+default_langcode: site_default
+language_alterable: false

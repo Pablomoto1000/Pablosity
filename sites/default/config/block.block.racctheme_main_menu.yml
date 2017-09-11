@@ -13,7 +13,7 @@ _core:
 id: racctheme_main_menu
 theme: racctheme
 region: header
-weight: -10
+weight: -13
 provider: null
 plugin: 'system_menu_block:main'
 settings:

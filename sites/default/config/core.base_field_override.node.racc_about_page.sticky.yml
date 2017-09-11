@@ -1,0 +1,22 @@
+uuid: 0020e08b-6d23-4402-978f-b48305a7806d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.racc_about_page
+id: node.racc_about_page.sticky
+field_name: sticky
+entity_type: node
+bundle: racc_about_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

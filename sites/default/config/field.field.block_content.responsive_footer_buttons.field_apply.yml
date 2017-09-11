@@ -1,0 +1,28 @@
+uuid: 35571eb9-c64d-4187-a637-f6a016d21299
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.responsive_footer_buttons
+    - field.storage.block_content.field_apply
+  module:
+    - link
+id: block_content.responsive_footer_buttons.field_apply
+field_name: field_apply
+entity_type: block_content
+bundle: responsive_footer_buttons
+label: Apply
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.racc.edu/admissions/get-started'
+    title: Apply
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

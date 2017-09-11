@@ -5,6 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.work_study_job_details.body
+    - field.field.node.work_study_job_details.field_contact
+    - field.field.node.work_study_job_details.field_department
+    - field.field.node.work_study_job_details.field_dept_location
+    - field.field.node.work_study_job_details.field_email
+    - field.field.node.work_study_job_details.field_hours
+    - field.field.node.work_study_job_details.field_job_detailsw
+    - field.field.node.work_study_job_details.field_job_title
+    - field.field.node.work_study_job_details.field_office_phone
+    - field.field.node.work_study_job_details.field_pay_rate
+    - field.field.node.work_study_job_details.field_posted_date
+    - field.field.node.work_study_job_details.field_term
     - node.type.work_study_job_details
   module:
     - text
@@ -25,4 +36,16 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_contact: true
+  field_department: true
+  field_dept_location: true
+  field_email: true
+  field_hours: true
+  field_job_detailsw: true
+  field_job_title: true
+  field_office_phone: true
+  field_pay_rate: true
+  field_posted_date: true
+  field_term: true
+  langcode: true
