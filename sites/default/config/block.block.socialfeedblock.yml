@@ -1,0 +1,20 @@
+uuid: ff374bb6-d13d-4b16-be36-9ce8e9f6e722
+langcode: en
+status: false
+dependencies:
+  module:
+    - social_feed
+  theme:
+    - racctheme
+id: socialfeedblock
+theme: racctheme
+region: banner_top
+weight: 0
+provider: null
+plugin: socialfeedblock
+settings:
+  id: socialfeedblock
+  label: Socialfeedblock
+  provider: social_feed
+  label_display: '0'
+visibility: {  }

@@ -10,6 +10,7 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  composer_manager: 0
   config: 0
   config_translation: 0
   contact: 0
@@ -65,6 +66,7 @@ module:
   slick_extras: 0
   slick_ui: 0
   slick_views: 0
+  social_feed: 0
   superfish: 0
   system: 0
   taxonomy: 0
