@@ -1,0 +1,27 @@
+social_feed.instagram:
+  path: /la/ruta/api/{count}
+  defaults:
+    _controller: Drupal\social_feed\Controller\SocialFeedController::instagram
+  requirements:
+    _permission: 'access content'
+
+social_feed.instagramApi:
+  path: /la/ruta/api/instagram
+  defaults:
+    _controller: Drupal\social_feed\Controller\SocialFeedController::instagramApi
+  requirements:
+    _permission: 'access content'
+
+social_feed.facebookApi:
+  path: /la/ruta/api/facebook
+  defaults:
+    _controller: Drupal\social_feed\Controller\SocialFeedController::facebookApi
+  requirements:
+    _permission: 'access content'
+
+social_feed.twitterApi:
+  path: /la/ruta/api/twitter
+  defaults:
+    _controller: Drupal\social_feed\Controller\SocialFeedController::twitterApi
+  requirements:
+    _permission: 'access content'

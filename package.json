@@ -23,5 +23,7 @@
     "imagemin-pngquant": "^4.2.0",
     "susy": "^2.2.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-util": "^3.0.8"
+  }
 }

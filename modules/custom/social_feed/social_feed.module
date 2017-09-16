@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains social_feed.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function social_feed_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the social_feed module.
+    case 'help.page.social_feed':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function social_feed_theme() {
+  return [
+    'social_feed' => [
+      'render element' => 'children',
+      'variables' => [
+          'instagramurl' => NULL,
+          'facebookurl' => NULL,
+          'facebooktext' => NULL,
+          'facebookimage' => NULL,
+          'twittertext' => NULL,
+          'twitteruser' => NULL,
+        ]
+    ],
+  ];
+}

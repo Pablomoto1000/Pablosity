@@ -26,14 +26,12 @@ document.body.onload = function(){
     instext.id = 'twtext';
     text = discriminator.innerHTML;
     var insdisc = text.includes('ins');
-    // alert(n)
     if (insdisc) {
       discriminator.className = 'fa fa-instagram';
       instext.id = 'insttext';
     }
   }
-
-
+  
   // Form Button Fix
 
   formbutton = document.getElementsByClassName('contact-message-need-more-info-form contact-message-form contact-form')[0];
