@@ -16,6 +16,6 @@ function ajaxreturn () {
      document.getElementById('socialfeedblock').innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "http://localhost/pablosity/socialfeed", true);
+  xhttp.open("GET", window.location.href + "/socialfeed", true);
   xhttp.send();
 }
