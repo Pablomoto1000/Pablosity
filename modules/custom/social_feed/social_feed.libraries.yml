@@ -1,0 +1,4 @@
+social_feed:
+  version: 1.x
+  js:
+    js/social_feed.js: {}

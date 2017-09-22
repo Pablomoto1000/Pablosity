@@ -1,3 +1,0 @@
-services:
-  social_feed.apiservicecontainer:
-    class: Drupal\social_feed\apiservicecontainer\SocialFeedApi

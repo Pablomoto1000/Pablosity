@@ -1,3 +1,17 @@
+# Social Feed container (Service)
+# DependencyInjection Social Feed Conainter
+
 services:
-  social_feed.apiservicecontainer:
-    class: Drupal\social_feed\apiservicecontainer\SocialFeedApi
+
+  # Call to the Container
+  instagram_service.Api:
+    class: Drupal\social_feed\Api\InstagramAPI
+
+  facebook_service.Api:
+    class: Drupal\social_feed\Api\FacebookAPI
+
+  twitter_service.Api:
+    class: Drupal\social_feed\Api\TwitterAPI
+
+  ajax_return.Api:
+    class: Drupal\social_feed\Api\AjaxReturn

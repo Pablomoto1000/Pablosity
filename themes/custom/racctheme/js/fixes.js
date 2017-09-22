@@ -1,37 +1,5 @@
 document.body.onload = function(){
-  // Get Connected Fixes
 
-  getconnectedicons = document.getElementsByClassName('view-id-get_connected view-display-id-block_1')[0];
-  socialicons = getconnectedicons.getElementsByClassName('socialicons')[0];
-  sociallist = socialicons.getElementsByClassName('item-list')[0];
-  gcsquares = getconnectedicons.getElementsByClassName('horizontal cols-4')[0];
-  // FB icon
-  fbli = sociallist.getElementsByTagName('li')[0].getElementsByTagName('a')[0].className = "fa fa-facebook";
-  // TW icon
-  twli = sociallist.getElementsByTagName('li')[1].getElementsByTagName('a')[0].className = "fa fa-twitter";
-  // YT icon
-  ytli = sociallist.getElementsByTagName('li')[2].getElementsByTagName('a')[0].className = "fa fa-youtube";
-  //LI icon
-  lili = sociallist.getElementsByTagName('li')[3].getElementsByTagName('a')[0].className = "fa fa-linkedin";
-  // SC icon
-  scli = sociallist.getElementsByTagName('li')[4].getElementsByTagName('a')[0].className = "fa fa-google-plus";
-  // IG icon
-  igli = sociallist.getElementsByTagName('li')[5].getElementsByTagName('a')[0].className = "fa fa-instagram";
-
-  // Id's and tw & ig discrimination
-  for (var i = 1; i < 8; i++) {
-    discriminator = gcsquares.getElementsByClassName('views-field-field-additional-info')[i].getElementsByClassName('field-content')[0];
-    instext = gcsquares.getElementsByClassName('views-field-field-contact')[i].getElementsByClassName('field-content')[0];
-    discriminator.className = 'fa fa-twitter';
-    instext.id = 'twtext';
-    text = discriminator.innerHTML;
-    var insdisc = text.includes('ins');
-    if (insdisc) {
-      discriminator.className = 'fa fa-instagram';
-      instext.id = 'insttext';
-    }
-  }
-  
   // Form Button Fix
 
   formbutton = document.getElementsByClassName('contact-message-need-more-info-form contact-message-form contact-form')[0];

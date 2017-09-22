@@ -28,16 +28,27 @@ function social_feed_help($route_name, RouteMatchInterface $route_match) {
  */
 function social_feed_theme() {
   return [
+    // Social feed theme.
     'social_feed' => [
       'render element' => 'children',
+      // Variables passed to social_feed.
       'variables' => [
-          'instagramurl' => NULL,
-          'facebookurl' => NULL,
-          'facebooktext' => NULL,
-          'facebookimage' => NULL,
-          'twittertext' => NULL,
-          'twitteruser' => NULL,
-        ]
+        'instagramurl' => NULL,
+        'instagramurlpost' => NULL,
+        'facebookurl' => NULL,
+        'facebooktext' => NULL,
+        'facebookimage' => NULL,
+        'twittertext' => NULL,
+        'twitteruser' => NULL,
+        'twitterurl' => NULL,
+      ],
     ],
   ];
+}
+
+/**
+ * Attach libraries.
+ */
+function social_feed_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'social_feed/social_feed';
 }

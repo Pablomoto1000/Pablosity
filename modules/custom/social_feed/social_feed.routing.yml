@@ -1,27 +1,67 @@
-social_feed.instagram:
-  path: /la/ruta/api/{count}
+# Routing Social Feed
+# Paths and Controllers
+# HERE
+
+
+# Instagram API route & Controller
+
+instagram_service.instagramApiResponse:
+
+  # Twitter API path
+  path: /socialfeed/instagram
+
+  # Twitter API Controller Method
   defaults:
     _controller: Drupal\social_feed\Controller\SocialFeedController::instagram
+
+  # API Requirements
   requirements:
     _permission: 'access content'
 
-social_feed.instagramApi:
-  path: /la/ruta/api/instagram
+
+# Facebook API route & Controller
+
+facebook_service.facebookApiResponse:
+
+  # Twitter API path
+  path: /socialfeed/facebook
+
+  # Twitter API Controller Method
   defaults:
-    _controller: Drupal\social_feed\Controller\SocialFeedController::instagramApi
+    _controller: Drupal\social_feed\Controller\SocialFeedController::facebook
+
+  # API Requirements
   requirements:
     _permission: 'access content'
 
-social_feed.facebookApi:
-  path: /la/ruta/api/facebook
+
+# Twitter API route & Controller
+
+twitter_service.twitterApiResponse:
+
+  # Twitter API path
+  path: /socialfeed/twitter
+
+  # Twitter API Controller Method
   defaults:
-    _controller: Drupal\social_feed\Controller\SocialFeedController::facebookApi
+    _controller: Drupal\social_feed\Controller\SocialFeedController::twitter
+
+  # API Requirements
   requirements:
     _permission: 'access content'
 
-social_feed.twitterApi:
-  path: /la/ruta/api/twitter
+
+# SocialFeed API route & Controller
+
+ajax_return.AjaxReturn:
+
+  # Twitter API path
+  path: /socialfeed
+
+  # Twitter API Controller Method
   defaults:
-    _controller: Drupal\social_feed\Controller\SocialFeedController::twitterApi
+    _controller: Drupal\social_feed\Controller\SocialFeedController::ajaxReturn
+
+  # API Requirements
   requirements:
     _permission: 'access content'
